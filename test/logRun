@@ -1,0 +1,2413 @@
+globaltag = PH2_1K_FB_V3::All
+Using workarounds for MC RAW data content bugs
+271 DQMStore::DQMStore 
+HcalTopologyIdealEP::HcalTopologyIdealEP
+07-Sep-2016 19:03:35 CDT  Initiating request to open file file:/hdfs/store/mc/TTI2023Upg14D/SingleTauOneProngFlatPt10To100/GEN-SIM-DIGI-RAW/PU140bx25_PH2_1K_FB_V3-v2/00000/06ABA3EB-FCE6-E311-85A2-0026189438BD.root
+07-Sep-2016 19:03:37 CDT  Successfully opened file file:/hdfs/store/mc/TTI2023Upg14D/SingleTauOneProngFlatPt10To100/GEN-SIM-DIGI-RAW/PU140bx25_PH2_1K_FB_V3-v2/00000/06ABA3EB-FCE6-E311-85A2-0026189438BD.root
+
+
+----------------------------------------
+Begin: L1TowerJetProducer
+----------------------------------------
+
+Creating JetShapeMap:
+JetShapeMap includes 69 towers.
+Eta offset is -9
+
+
+----------------------------------------
+Begin: L1TowerJetCentralityFilter
+----------------------------------------
+
+
+
+----------------------------------------
+Begin: L1TowerJetPUEstimator
+----------------------------------------
+
+
+
+----------------------------------------
+Begin: L1TowerJetPUSubtractedProducer
+----------------------------------------
+
+creating efficiency tree
+HcalTopologyIdealEP::produce(const IdealGeometryRecord& iRecord)
+mode = 0, maxDepthHB = 2, maxDepthHE = 3
+
+TTTrackAssociator< edm::Ref<edm::DetSetVector<PixelDigi>, PixelDigi, edm::refhelper::FindForDetSetVector<PixelDigi> > > loaded.
+
+Begin processing the 1st record. Run 1, Event 8021, LumiSection 82 at 07-Sep-2016 19:03:46.700 CDT
+Found:
+
+	Barrel Stack layer 5 : 1008 stacks
+	Barrel Stack layer 6 : 1320 stacks
+	Barrel Stack layer 7 : 1836 stacks
+	Barrel Stack layer 8 : 1152 stacks
+	Barrel Stack layer 9 : 1488 stacks
+	Barrel Stack layer 10 : 1824 stacks
+
+	Endcap Stack disk 11 : 1360 stacks
+	Endcap Stack disk 12 : 1360 stacks
+	Endcap Stack disk 13 : 1360 stacks
+	Endcap Stack disk 14 : 1360 stacks
+	Endcap Stack disk 15 : 1360 stacks
+Created 15428 stacks in 29 s
+got tau
+tau vis pt: 11.854 genEta: -2.71335 genPhi: -1.9052
+Begin processing the 2nd record. Run 1, Event 8022, LumiSection 82 at 07-Sep-2016 19:04:49.196 CDT
+got tau
+tau vis pt: 10.661 genEta: 2.62556 genPhi: -0.945977
+found matched track pt: 3.82648
+Begin processing the 3rd record. Run 1, Event 8023, LumiSection 82 at 07-Sep-2016 19:04:51.770 CDT
+got tau
+tau vis pt: 72.2535 genEta: 2.10293 genPhi: 0.970813
+found matched track pt: 69.3066
+Begin processing the 4th record. Run 1, Event 8024, LumiSection 82 at 07-Sep-2016 19:04:55.942 CDT
+got tau
+tau vis pt: 0.442343 genEta: -1.75547 genPhi: 2.66619
+found matched track pt: 2.76912
+Begin processing the 5th record. Run 1, Event 8025, LumiSection 82 at 07-Sep-2016 19:04:58.971 CDT
+got tau
+tau vis pt: 67.6652 genEta: 1.65207 genPhi: 2.18756
+found matched track pt: 51.825
+Begin processing the 6th record. Run 1, Event 8026, LumiSection 82 at 07-Sep-2016 19:05:10.710 CDT
+got tau
+tau vis pt: 24.5634 genEta: 1.88047 genPhi: -2.97407
+found matched track pt: 24.4621
+Begin processing the 7th record. Run 1, Event 8027, LumiSection 82 at 07-Sep-2016 19:05:13.663 CDT
+got tau
+tau vis pt: 19.6316 genEta: 1.92463 genPhi: 2.67255
+found matched track pt: 16.7499
+Begin processing the 8th record. Run 1, Event 8028, LumiSection 82 at 07-Sep-2016 19:05:17.161 CDT
+got tau
+tau vis pt: 84.5336 genEta: 1.6752 genPhi: -1.0897
+found matched track pt: 28.3946
+Begin processing the 9th record. Run 1, Event 8029, LumiSection 82 at 07-Sep-2016 19:05:20.434 CDT
+got tau
+tau vis pt: 1.30968 genEta: -0.126574 genPhi: 0.0145341
+found matched track pt: 3.70856
+Begin processing the 10th record. Run 1, Event 8030, LumiSection 82 at 07-Sep-2016 19:05:23.569 CDT
+got tau
+tau vis pt: 20.9553 genEta: 0.577433 genPhi: 2.0788
+found matched track pt: 21.0531
+Begin processing the 11th record. Run 1, Event 8031, LumiSection 82 at 07-Sep-2016 19:05:26.471 CDT
+got tau
+tau vis pt: 45.2711 genEta: 0.0112615 genPhi: 0.541086
+found matched track pt: 69.4715
+Begin processing the 12th record. Run 1, Event 8032, LumiSection 82 at 07-Sep-2016 19:05:29.788 CDT
+got tau
+tau vis pt: 6.69123 genEta: 0.426125 genPhi: -1.67352
+found matched track pt: 6.71049
+Begin processing the 13th record. Run 1, Event 8033, LumiSection 82 at 07-Sep-2016 19:05:32.474 CDT
+got tau
+tau vis pt: 30.9834 genEta: 2.37957 genPhi: -1.95553
+found matched track pt: 28.872
+Begin processing the 14th record. Run 1, Event 8034, LumiSection 82 at 07-Sep-2016 19:05:36.076 CDT
+got tau
+tau vis pt: 83.0872 genEta: 0.724694 genPhi: 1.58861
+found matched track pt: 17.5738
+Begin processing the 15th record. Run 1, Event 8035, LumiSection 82 at 07-Sep-2016 19:05:39.882 CDT
+got tau
+tau vis pt: 6.93158 genEta: 1.47165 genPhi: -2.03416
+found matched track pt: 7.36726
+Begin processing the 16th record. Run 1, Event 8036, LumiSection 82 at 07-Sep-2016 19:05:43.504 CDT
+got tau
+tau vis pt: 17.1324 genEta: 0.157312 genPhi: -0.463672
+found matched track pt: 17.0403
+Begin processing the 17th record. Run 1, Event 8037, LumiSection 82 at 07-Sep-2016 19:05:46.513 CDT
+got tau
+tau vis pt: 25.417 genEta: 2.00254 genPhi: -2.64356
+found matched track pt: 25.5603
+Begin processing the 18th record. Run 1, Event 8038, LumiSection 82 at 07-Sep-2016 19:05:49.944 CDT
+got tau
+tau vis pt: 39.5623 genEta: -0.274893 genPhi: -2.41996
+found matched track pt: 39.4167
+Begin processing the 19th record. Run 1, Event 8039, LumiSection 82 at 07-Sep-2016 19:05:53.831 CDT
+got tau
+tau vis pt: 68.0988 genEta: 1.53104 genPhi: 1.17655
+found matched track pt: 14.268
+Begin processing the 20th record. Run 1, Event 8040, LumiSection 82 at 07-Sep-2016 19:05:57.770 CDT
+got tau
+tau vis pt: 51.4247 genEta: -0.920059 genPhi: -0.0788692
+found matched track pt: 27.9781
+Begin processing the 21st record. Run 1, Event 8041, LumiSection 82 at 07-Sep-2016 19:06:00.847 CDT
+got tau
+tau vis pt: 13.9406 genEta: 0.813376 genPhi: -2.58216
+found matched track pt: 12.4547
+Begin processing the 22nd record. Run 1, Event 8042, LumiSection 82 at 07-Sep-2016 19:06:04.932 CDT
+got tau
+tau vis pt: 29.3524 genEta: -1.87465 genPhi: 3.12471
+found matched track pt: 67.3247
+Begin processing the 23rd record. Run 1, Event 8043, LumiSection 82 at 07-Sep-2016 19:06:08.428 CDT
+got tau
+tau vis pt: 4.15548 genEta: 1.04121 genPhi: -2.34511
+found matched track pt: 3.49663
+Begin processing the 24th record. Run 1, Event 8044, LumiSection 82 at 07-Sep-2016 19:06:12.949 CDT
+got tau
+tau vis pt: 56.5903 genEta: -0.44053 genPhi: -1.69348
+found matched track pt: 10.9045
+Begin processing the 25th record. Run 1, Event 8045, LumiSection 82 at 07-Sep-2016 19:06:16.190 CDT
+got tau
+tau vis pt: 41.1823 genEta: -0.594884 genPhi: -0.573293
+found matched track pt: 28.1126
+Begin processing the 26th record. Run 1, Event 8046, LumiSection 82 at 07-Sep-2016 19:06:18.805 CDT
+got tau
+tau vis pt: 7.14843 genEta: -0.259729 genPhi: -0.257764
+found matched track pt: 7.11903
+Begin processing the 27th record. Run 1, Event 8047, LumiSection 82 at 07-Sep-2016 19:06:20.566 CDT
+got tau
+tau vis pt: 24.021 genEta: -2.49315 genPhi: 2.92922
+found matched track pt: 28.1205
+Begin processing the 28th record. Run 1, Event 8048, LumiSection 82 at 07-Sep-2016 19:06:23.812 CDT
+got tau
+tau vis pt: 14.4129 genEta: 0.972984 genPhi: 1.61546
+found matched track pt: 11.9305
+Begin processing the 29th record. Run 1, Event 8049, LumiSection 82 at 07-Sep-2016 19:06:26.612 CDT
+got tau
+tau vis pt: 9.00513 genEta: 0.280935 genPhi: -2.38733
+found matched track pt: 6.35898
+Begin processing the 30th record. Run 1, Event 8050, LumiSection 82 at 07-Sep-2016 19:06:30.850 CDT
+got tau
+tau vis pt: 40.3921 genEta: -0.440341 genPhi: -1.35428
+found matched track pt: 31.9969
+Begin processing the 31st record. Run 1, Event 8051, LumiSection 82 at 07-Sep-2016 19:06:34.769 CDT
+got tau
+tau vis pt: 32.7775 genEta: 0.489031 genPhi: 1.17833
+found matched track pt: 6.62788
+Begin processing the 32nd record. Run 1, Event 8052, LumiSection 82 at 07-Sep-2016 19:06:37.855 CDT
+got tau
+tau vis pt: 22.1241 genEta: 2.94651 genPhi: 2.0546
+Begin processing the 33rd record. Run 1, Event 8053, LumiSection 82 at 07-Sep-2016 19:06:40.445 CDT
+got tau
+tau vis pt: 11.6464 genEta: -1.20789 genPhi: -3.01866
+found matched track pt: 11.384
+Begin processing the 34th record. Run 1, Event 8054, LumiSection 82 at 07-Sep-2016 19:06:44.086 CDT
+got tau
+tau vis pt: 11.505 genEta: 2.19001 genPhi: -0.218024
+found matched track pt: 25.7395
+Begin processing the 35th record. Run 1, Event 8055, LumiSection 82 at 07-Sep-2016 19:06:46.523 CDT
+got tau
+tau vis pt: 49.9826 genEta: -0.082338 genPhi: -2.67603
+found matched track pt: 49.681
+Begin processing the 36th record. Run 1, Event 8056, LumiSection 82 at 07-Sep-2016 19:06:49.134 CDT
+got tau
+tau vis pt: 61.1993 genEta: -2.87745 genPhi: -0.558231
+Begin processing the 37th record. Run 1, Event 8057, LumiSection 82 at 07-Sep-2016 19:06:51.610 CDT
+got tau
+tau vis pt: 7.26457 genEta: -0.0344191 genPhi: 1.10974
+found matched track pt: 7.26873
+Begin processing the 38th record. Run 1, Event 8058, LumiSection 82 at 07-Sep-2016 19:06:55.786 CDT
+got tau
+tau vis pt: 29.4067 genEta: 1.51392 genPhi: 2.89527
+found matched track pt: 10.9421
+Begin processing the 39th record. Run 1, Event 8059, LumiSection 82 at 07-Sep-2016 19:06:58.935 CDT
+got tau
+tau vis pt: 23.3947 genEta: 0.704926 genPhi: 1.93798
+found matched track pt: 23.3526
+Begin processing the 40th record. Run 1, Event 8060, LumiSection 82 at 07-Sep-2016 19:07:02.332 CDT
+got tau
+tau vis pt: 19.4628 genEta: 3.02709 genPhi: 0.403349
+Begin processing the 41st record. Run 1, Event 8061, LumiSection 82 at 07-Sep-2016 19:07:05.387 CDT
+got tau
+tau vis pt: 17.47 genEta: -2.18543 genPhi: -2.61063
+found matched track pt: 146.811
+Begin processing the 42nd record. Run 1, Event 8062, LumiSection 82 at 07-Sep-2016 19:07:10.591 CDT
+got tau
+tau vis pt: 35.5263 genEta: -2.11354 genPhi: -0.033057
+found matched track pt: 25.6669
+Begin processing the 43rd record. Run 1, Event 8063, LumiSection 82 at 07-Sep-2016 19:07:13.254 CDT
+got tau
+tau vis pt: 30.5985 genEta: -0.546982 genPhi: 1.22916
+found matched track pt: 17.1768
+Begin processing the 44th record. Run 1, Event 8064, LumiSection 82 at 07-Sep-2016 19:07:15.873 CDT
+got tau
+tau vis pt: 11.9426 genEta: 2.98065 genPhi: -3.13928
+Begin processing the 45th record. Run 1, Event 8065, LumiSection 82 at 07-Sep-2016 19:07:18.936 CDT
+got tau
+tau vis pt: 38.0534 genEta: 1.54842 genPhi: -3.08492
+found matched track pt: 24.7259
+Begin processing the 46th record. Run 1, Event 8066, LumiSection 82 at 07-Sep-2016 19:07:21.838 CDT
+got tau
+tau vis pt: 43.5837 genEta: -0.178903 genPhi: 0.900759
+found matched track pt: 27.1415
+Begin processing the 47th record. Run 1, Event 8067, LumiSection 82 at 07-Sep-2016 19:07:24.323 CDT
+got tau
+tau vis pt: 4.77662 genEta: 0.220638 genPhi: -1.3107
+found matched track pt: 4.75376
+Begin processing the 48th record. Run 1, Event 8068, LumiSection 82 at 07-Sep-2016 19:07:27.822 CDT
+got tau
+tau vis pt: 6.12836 genEta: -2.50383 genPhi: 1.53123
+found matched track pt: 1966.32
+Begin processing the 49th record. Run 1, Event 8069, LumiSection 82 at 07-Sep-2016 19:07:31.472 CDT
+got tau
+tau vis pt: 10.2241 genEta: 0.011093 genPhi: 0.539471
+found matched track pt: 2.33986
+Begin processing the 50th record. Run 1, Event 8070, LumiSection 82 at 07-Sep-2016 19:07:34.280 CDT
+got tau
+tau vis pt: 56.4314 genEta: 1.73731 genPhi: 2.60616
+found matched track pt: 37.0509
+Begin processing the 51st record. Run 1, Event 8071, LumiSection 82 at 07-Sep-2016 19:07:37.033 CDT
+got tau
+tau vis pt: 38.471 genEta: 2.03729 genPhi: -2.13662
+found matched track pt: 26.7964
+Begin processing the 52nd record. Run 1, Event 8072, LumiSection 82 at 07-Sep-2016 19:07:39.842 CDT
+got tau
+tau vis pt: 23.2922 genEta: 2.49249 genPhi: -0.0614866
+found matched track pt: 4.32634
+Begin processing the 53rd record. Run 1, Event 8073, LumiSection 82 at 07-Sep-2016 19:07:42.699 CDT
+got tau
+tau vis pt: 46.9591 genEta: 0.484996 genPhi: -1.97535
+found matched track pt: 47.7725
+Begin processing the 54th record. Run 1, Event 8074, LumiSection 82 at 07-Sep-2016 19:07:45.173 CDT
+got tau
+tau vis pt: 14.0403 genEta: 1.28722 genPhi: 1.61156
+found matched track pt: 4.83095
+Begin processing the 55th record. Run 1, Event 8075, LumiSection 82 at 07-Sep-2016 19:07:47.791 CDT
+got tau
+tau vis pt: 27.0559 genEta: -2.66312 genPhi: -0.269877
+found matched track pt: 2.35761
+Begin processing the 56th record. Run 1, Event 8076, LumiSection 82 at 07-Sep-2016 19:07:50.042 CDT
+got tau
+tau vis pt: 37.7641 genEta: 0.10887 genPhi: 2.64753
+found matched track pt: 49.9323
+Begin processing the 57th record. Run 1, Event 8077, LumiSection 82 at 07-Sep-2016 19:07:52.955 CDT
+got tau
+tau vis pt: 10.4742 genEta: -1.76282 genPhi: 0.176059
+found matched track pt: 10.6277
+Begin processing the 58th record. Run 1, Event 8078, LumiSection 82 at 07-Sep-2016 19:07:56.451 CDT
+got tau
+tau vis pt: 84.8901 genEta: -0.363954 genPhi: -1.51488
+found matched track pt: 82.8331
+Begin processing the 59th record. Run 1, Event 8079, LumiSection 82 at 07-Sep-2016 19:07:59.455 CDT
+got tau
+tau vis pt: 54.3881 genEta: -0.612346 genPhi: 0.411514
+found matched track pt: 36.588
+Begin processing the 60th record. Run 1, Event 8080, LumiSection 82 at 07-Sep-2016 19:08:02.174 CDT
+got tau
+tau vis pt: 8.92879 genEta: -1.82776 genPhi: 1.01944
+found matched track pt: 6.46548
+Begin processing the 61st record. Run 1, Event 8081, LumiSection 82 at 07-Sep-2016 19:08:05.743 CDT
+got tau
+tau vis pt: 70.1221 genEta: 1.00629 genPhi: -2.59999
+found matched track pt: 36.3875
+Begin processing the 62nd record. Run 1, Event 8082, LumiSection 82 at 07-Sep-2016 19:08:09.573 CDT
+got tau
+tau vis pt: 23.008 genEta: 0.885074 genPhi: -1.89564
+found matched track pt: 22.8508
+Begin processing the 63rd record. Run 1, Event 8083, LumiSection 82 at 07-Sep-2016 19:08:11.933 CDT
+got tau
+tau vis pt: 77.2484 genEta: 1.4025 genPhi: -2.5157
+found matched track pt: 54.3472
+Begin processing the 64th record. Run 1, Event 8084, LumiSection 82 at 07-Sep-2016 19:08:14.431 CDT
+got tau
+tau vis pt: 7.92949 genEta: 0.689542 genPhi: -1.45172
+found matched track pt: 7.10463
+Begin processing the 65th record. Run 1, Event 8085, LumiSection 82 at 07-Sep-2016 19:08:16.757 CDT
+got tau
+tau vis pt: 41.5636 genEta: 1.96372 genPhi: 0.306495
+found matched track pt: 19.6871
+Begin processing the 66th record. Run 1, Event 8086, LumiSection 82 at 07-Sep-2016 19:08:20.307 CDT
+got tau
+tau vis pt: 14.517 genEta: -2.78212 genPhi: -0.81644
+Begin processing the 67th record. Run 1, Event 8087, LumiSection 82 at 07-Sep-2016 19:08:23.477 CDT
+got tau
+tau vis pt: 16.7982 genEta: -2.79621 genPhi: -2.82735
+Begin processing the 68th record. Run 1, Event 8088, LumiSection 82 at 07-Sep-2016 19:08:26.307 CDT
+got tau
+tau vis pt: 70.1085 genEta: -1.2924 genPhi: 0.575581
+found matched track pt: 59.7259
+Begin processing the 69th record. Run 1, Event 8089, LumiSection 82 at 07-Sep-2016 19:08:29.585 CDT
+got tau
+tau vis pt: 58.006 genEta: -2.28335 genPhi: 3.02493
+found matched track pt: 21.9519
+Begin processing the 70th record. Run 1, Event 8090, LumiSection 82 at 07-Sep-2016 19:08:33.543 CDT
+got tau
+tau vis pt: 47.9182 genEta: -0.102074 genPhi: 2.12184
+found matched track pt: 12.0491
+Begin processing the 71st record. Run 1, Event 8091, LumiSection 82 at 07-Sep-2016 19:08:35.907 CDT
+got tau
+tau vis pt: 43.9277 genEta: 1.44224 genPhi: -3.06296
+found matched track pt: 41.7323
+Begin processing the 72nd record. Run 1, Event 8092, LumiSection 82 at 07-Sep-2016 19:08:38.865 CDT
+got tau
+tau vis pt: 41.8605 genEta: 2.63758 genPhi: -0.155631
+found matched track pt: 2.55102
+Begin processing the 73rd record. Run 1, Event 8093, LumiSection 82 at 07-Sep-2016 19:08:42.101 CDT
+got tau
+tau vis pt: 26.0789 genEta: 2.09735 genPhi: 0.529269
+found matched track pt: 3.35161
+Begin processing the 74th record. Run 1, Event 8094, LumiSection 82 at 07-Sep-2016 19:08:44.983 CDT
+got tau
+tau vis pt: 32.9326 genEta: -2.21213 genPhi: 1.92469
+found matched track pt: 34.2813
+Begin processing the 75th record. Run 1, Event 8095, LumiSection 82 at 07-Sep-2016 19:08:48.418 CDT
+got tau
+tau vis pt: 19.1252 genEta: -1.9499 genPhi: -0.089399
+found matched track pt: 141.517
+Begin processing the 76th record. Run 1, Event 8096, LumiSection 82 at 07-Sep-2016 19:08:51.723 CDT
+got tau
+tau vis pt: 65.7729 genEta: 2.36083 genPhi: -0.271436
+found matched track pt: 52.0346
+Begin processing the 77th record. Run 1, Event 8097, LumiSection 82 at 07-Sep-2016 19:08:55.776 CDT
+got tau
+tau vis pt: 42.1865 genEta: 1.85582 genPhi: 0.965266
+found matched track pt: 42.6954
+Begin processing the 78th record. Run 1, Event 8098, LumiSection 82 at 07-Sep-2016 19:08:58.293 CDT
+got tau
+tau vis pt: 28.4172 genEta: 2.98576 genPhi: -0.813664
+Begin processing the 79th record. Run 1, Event 8099, LumiSection 82 at 07-Sep-2016 19:09:01.318 CDT
+got tau
+tau vis pt: 10.1247 genEta: 1.69362 genPhi: 0.528318
+found matched track pt: 3.0794
+Begin processing the 80th record. Run 1, Event 8100, LumiSection 82 at 07-Sep-2016 19:09:03.796 CDT
+got tau
+tau vis pt: 30.1173 genEta: 1.24318 genPhi: 2.46389
+found matched track pt: 6.14787
+Begin processing the 81st record. Run 1, Event 8101, LumiSection 82 at 07-Sep-2016 19:09:06.775 CDT
+got tau
+tau vis pt: 41.8085 genEta: -1.77731 genPhi: -2.02128
+found matched track pt: 28.1592
+Begin processing the 82nd record. Run 1, Event 8102, LumiSection 82 at 07-Sep-2016 19:09:10.532 CDT
+got tau
+tau vis pt: 22.9795 genEta: 1.4879 genPhi: -2.66719
+found matched track pt: 3.95337
+Begin processing the 83rd record. Run 1, Event 8103, LumiSection 82 at 07-Sep-2016 19:09:13.598 CDT
+got tau
+tau vis pt: 23.9106 genEta: -2.06314 genPhi: 2.31916
+found matched track pt: 18.615
+Begin processing the 84th record. Run 1, Event 8104, LumiSection 82 at 07-Sep-2016 19:09:16.343 CDT
+got tau
+tau vis pt: 6.69587 genEta: 2.82647 genPhi: -2.08436
+Begin processing the 85th record. Run 1, Event 8105, LumiSection 82 at 07-Sep-2016 19:09:19.778 CDT
+got tau
+tau vis pt: 46.767 genEta: 0.744682 genPhi: -1.97983
+found matched track pt: 46.8326
+Begin processing the 86th record. Run 1, Event 8106, LumiSection 82 at 07-Sep-2016 19:09:23.076 CDT
+got tau
+tau vis pt: 8.60019 genEta: 1.8949 genPhi: -0.488416
+found matched track pt: 8.50448
+Begin processing the 87th record. Run 1, Event 8107, LumiSection 82 at 07-Sep-2016 19:09:26.284 CDT
+got tau
+tau vis pt: 42.0668 genEta: -1.4063 genPhi: 0.0198792
+found matched track pt: 11.1075
+Begin processing the 88th record. Run 1, Event 8108, LumiSection 82 at 07-Sep-2016 19:09:30.371 CDT
+got tau
+tau vis pt: 25.3612 genEta: 2.6062 genPhi: -2.00691
+Begin processing the 89th record. Run 1, Event 8109, LumiSection 82 at 07-Sep-2016 19:09:34.096 CDT
+got tau
+tau vis pt: 33.5477 genEta: 2.42001 genPhi: -1.85995
+found matched track pt: 15.8052
+Begin processing the 90th record. Run 1, Event 8110, LumiSection 82 at 07-Sep-2016 19:09:37.308 CDT
+got tau
+tau vis pt: 21.0487 genEta: -2.34584 genPhi: -1.37313
+found matched track pt: 1.96767
+Begin processing the 91st record. Run 1, Event 8111, LumiSection 82 at 07-Sep-2016 19:09:41.129 CDT
+got tau
+tau vis pt: 5.80221 genEta: 1.51901 genPhi: -1.4821
+found matched track pt: 5.80831
+Begin processing the 92nd record. Run 1, Event 8112, LumiSection 82 at 07-Sep-2016 19:09:44.576 CDT
+got tau
+tau vis pt: 51.9828 genEta: 0.357096 genPhi: 1.08908
+found matched track pt: 21.6902
+Begin processing the 93rd record. Run 1, Event 8113, LumiSection 82 at 07-Sep-2016 19:09:47.256 CDT
+got tau
+tau vis pt: 76.5552 genEta: 1.6369 genPhi: 1.46535
+found matched track pt: 77.3395
+Begin processing the 94th record. Run 1, Event 8114, LumiSection 82 at 07-Sep-2016 19:09:50.928 CDT
+got tau
+tau vis pt: 55.1287 genEta: 2.83876 genPhi: 1.88362
+Begin processing the 95th record. Run 1, Event 8115, LumiSection 82 at 07-Sep-2016 19:09:53.380 CDT
+got tau
+tau vis pt: 57.6869 genEta: -2.0316 genPhi: 2.12716
+found matched track pt: 58.5973
+Begin processing the 96th record. Run 1, Event 8116, LumiSection 82 at 07-Sep-2016 19:09:56.477 CDT
+got tau
+tau vis pt: 24.9355 genEta: -2.09931 genPhi: 1.51672
+found matched track pt: 16.388
+Begin processing the 97th record. Run 1, Event 8117, LumiSection 82 at 07-Sep-2016 19:09:59.669 CDT
+got tau
+tau vis pt: 21.2349 genEta: -1.26963 genPhi: -1.50862
+found matched track pt: 13.8732
+Begin processing the 98th record. Run 1, Event 8118, LumiSection 82 at 07-Sep-2016 19:10:02.841 CDT
+got tau
+tau vis pt: 43.285 genEta: 1.19528 genPhi: 1.39446
+found matched track pt: 11.6654
+Begin processing the 99th record. Run 1, Event 8119, LumiSection 82 at 07-Sep-2016 19:10:05.108 CDT
+got tau
+tau vis pt: 7.88471 genEta: 0.975237 genPhi: 1.92957
+found matched track pt: 7.88542
+Begin processing the 100th record. Run 1, Event 8120, LumiSection 82 at 07-Sep-2016 19:10:08.715 CDT
+got tau
+tau vis pt: 69.6329 genEta: -2.28546 genPhi: -1.0447
+found matched track pt: 16.7326
+Begin processing the 101st record. Run 1, Event 21381, LumiSection 218 at 07-Sep-2016 19:10:12.048 CDT
+got tau
+tau vis pt: 61.1492 genEta: -0.322028 genPhi: 3.08677
+found matched track pt: 44.9905
+Begin processing the 102nd record. Run 1, Event 21382, LumiSection 218 at 07-Sep-2016 19:10:15.183 CDT
+got tau
+tau vis pt: 18.6693 genEta: 1.15113 genPhi: -1.79352
+found matched track pt: 18.2639
+Begin processing the 103rd record. Run 1, Event 21383, LumiSection 218 at 07-Sep-2016 19:10:18.361 CDT
+got tau
+tau vis pt: 61.6574 genEta: -1.10217 genPhi: 1.95834
+found matched track pt: 39.7619
+Begin processing the 104th record. Run 1, Event 21384, LumiSection 218 at 07-Sep-2016 19:10:22.020 CDT
+got tau
+tau vis pt: 50.7952 genEta: -2.27108 genPhi: 0.00455039
+found matched track pt: 46.201
+Begin processing the 105th record. Run 1, Event 21385, LumiSection 218 at 07-Sep-2016 19:10:24.647 CDT
+got tau
+tau vis pt: 7.80343 genEta: 2.91478 genPhi: -1.43716
+Begin processing the 106th record. Run 1, Event 21386, LumiSection 218 at 07-Sep-2016 19:10:28.713 CDT
+got tau
+tau vis pt: 84.0882 genEta: -1.62009 genPhi: 2.85241
+found matched track pt: 2.68543
+Begin processing the 107th record. Run 1, Event 21387, LumiSection 218 at 07-Sep-2016 19:10:32.097 CDT
+got tau
+tau vis pt: 8.24901 genEta: 1.91871 genPhi: -1.76817
+found matched track pt: 8.47461
+Begin processing the 108th record. Run 1, Event 21388, LumiSection 218 at 07-Sep-2016 19:10:35.866 CDT
+got tau
+tau vis pt: 78.2868 genEta: 0.341172 genPhi: 1.25956
+found matched track pt: 58.6072
+Begin processing the 109th record. Run 1, Event 21389, LumiSection 218 at 07-Sep-2016 19:10:39.209 CDT
+got tau
+tau vis pt: 16.2336 genEta: 1.86744 genPhi: 2.67497
+found matched track pt: 23.9468
+Begin processing the 110th record. Run 1, Event 21390, LumiSection 218 at 07-Sep-2016 19:10:42.278 CDT
+got tau
+tau vis pt: 55.6731 genEta: 1.48601 genPhi: -1.42409
+found matched track pt: 20.1026
+Begin processing the 111th record. Run 1, Event 21391, LumiSection 218 at 07-Sep-2016 19:10:44.292 CDT
+got tau
+tau vis pt: 60.6242 genEta: -0.930483 genPhi: 0.107809
+found matched track pt: 3.08865
+Begin processing the 112th record. Run 1, Event 21392, LumiSection 218 at 07-Sep-2016 19:10:46.692 CDT
+got tau
+tau vis pt: 49.9614 genEta: 2.99181 genPhi: -2.83955
+Begin processing the 113th record. Run 1, Event 21393, LumiSection 218 at 07-Sep-2016 19:10:49.334 CDT
+got tau
+tau vis pt: 29.8423 genEta: 2.48825 genPhi: 1.16895
+found matched track pt: 20.9884
+Begin processing the 114th record. Run 1, Event 21394, LumiSection 218 at 07-Sep-2016 19:10:52.640 CDT
+got tau
+tau vis pt: 65.7657 genEta: 2.47212 genPhi: 2.71179
+found matched track pt: 12.0865
+Begin processing the 115th record. Run 1, Event 21395, LumiSection 218 at 07-Sep-2016 19:10:55.289 CDT
+got tau
+tau vis pt: 14.3667 genEta: -0.532098 genPhi: -2.35759
+found matched track pt: 10.708
+Begin processing the 116th record. Run 1, Event 21396, LumiSection 218 at 07-Sep-2016 19:10:58.381 CDT
+got tau
+tau vis pt: 7.61724 genEta: -1.43115 genPhi: 1.75168
+found matched track pt: 7.52317
+Begin processing the 117th record. Run 1, Event 21397, LumiSection 218 at 07-Sep-2016 19:11:02.374 CDT
+got tau
+tau vis pt: 4.61672 genEta: 0.943457 genPhi: 0.260166
+found matched track pt: 2.70704
+Begin processing the 118th record. Run 1, Event 21398, LumiSection 218 at 07-Sep-2016 19:11:06.577 CDT
+got tau
+tau vis pt: 87.7667 genEta: 0.718123 genPhi: -2.63846
+found matched track pt: 31.4603
+Begin processing the 119th record. Run 1, Event 21399, LumiSection 218 at 07-Sep-2016 19:11:10.159 CDT
+got tau
+tau vis pt: 30.3849 genEta: 0.00861009 genPhi: 0.12899
+found matched track pt: 27.6021
+Begin processing the 120th record. Run 1, Event 21400, LumiSection 218 at 07-Sep-2016 19:11:14.394 CDT
+got tau
+tau vis pt: 10.604 genEta: 2.84353 genPhi: 0.175301
+Begin processing the 121st record. Run 1, Event 21401, LumiSection 218 at 07-Sep-2016 19:11:18.222 CDT
+got tau
+tau vis pt: 14.2511 genEta: -0.109846 genPhi: 2.44652
+found matched track pt: 12.0164
+Begin processing the 122nd record. Run 1, Event 21402, LumiSection 218 at 07-Sep-2016 19:11:20.889 CDT
+got tau
+tau vis pt: 42.9173 genEta: 0.315343 genPhi: -2.35481
+found matched track pt: 21.3162
+Begin processing the 123rd record. Run 1, Event 21403, LumiSection 218 at 07-Sep-2016 19:11:24.046 CDT
+got tau
+tau vis pt: 31.2977 genEta: 0.39192 genPhi: 1.4052
+found matched track pt: 6.76483
+Begin processing the 124th record. Run 1, Event 21404, LumiSection 218 at 07-Sep-2016 19:11:27.101 CDT
+got tau
+tau vis pt: 37.4688 genEta: -0.0216321 genPhi: 1.92018
+found matched track pt: 6.11046
+Begin processing the 125th record. Run 1, Event 21405, LumiSection 218 at 07-Sep-2016 19:11:30.252 CDT
+got tau
+tau vis pt: 9.99122 genEta: 2.59877 genPhi: -2.95883
+Begin processing the 126th record. Run 1, Event 21406, LumiSection 218 at 07-Sep-2016 19:11:32.945 CDT
+got tau
+tau vis pt: 67.2739 genEta: -0.211163 genPhi: -2.61776
+found matched track pt: 16.4027
+Begin processing the 127th record. Run 1, Event 21407, LumiSection 218 at 07-Sep-2016 19:11:35.871 CDT
+got tau
+tau vis pt: 46.1005 genEta: 1.49625 genPhi: -3.1187
+found matched track pt: 34.1223
+Begin processing the 128th record. Run 1, Event 21408, LumiSection 218 at 07-Sep-2016 19:11:39.125 CDT
+got tau
+tau vis pt: 34.0343 genEta: -2.64925 genPhi: 0.015081
+found matched track pt: 4.79583
+Begin processing the 129th record. Run 1, Event 21409, LumiSection 218 at 07-Sep-2016 19:11:41.998 CDT
+got tau
+tau vis pt: 14.3921 genEta: -0.34072 genPhi: -1.20419
+found matched track pt: 8.662
+Begin processing the 130th record. Run 1, Event 21410, LumiSection 218 at 07-Sep-2016 19:11:45.130 CDT
+got tau
+tau vis pt: 78.4937 genEta: -1.05944 genPhi: -2.91242
+found matched track pt: 66.4348
+Begin processing the 131st record. Run 1, Event 21411, LumiSection 218 at 07-Sep-2016 19:11:47.861 CDT
+got tau
+tau vis pt: 21.2347 genEta: 0.8502 genPhi: 0.539899
+found matched track pt: 9.07905
+Begin processing the 132nd record. Run 1, Event 21412, LumiSection 218 at 07-Sep-2016 19:11:50.239 CDT
+got tau
+tau vis pt: 16.3239 genEta: -2.1392 genPhi: -0.812356
+found matched track pt: 14.6779
+Begin processing the 133rd record. Run 1, Event 21413, LumiSection 218 at 07-Sep-2016 19:11:53.584 CDT
+got tau
+tau vis pt: 30.9655 genEta: -0.76567 genPhi: 3.07636
+found matched track pt: 31.2263
+Begin processing the 134th record. Run 1, Event 21414, LumiSection 218 at 07-Sep-2016 19:11:56.197 CDT
+got tau
+tau vis pt: 31.0016 genEta: 1.80684 genPhi: 2.97983
+found matched track pt: 5.13394
+Begin processing the 135th record. Run 1, Event 21415, LumiSection 218 at 07-Sep-2016 19:11:58.817 CDT
+got tau
+tau vis pt: 61.4071 genEta: 0.0398082 genPhi: 2.49665
+found matched track pt: 14.1761
+Begin processing the 136th record. Run 1, Event 21416, LumiSection 218 at 07-Sep-2016 19:12:02.491 CDT
+got tau
+tau vis pt: 24.6234 genEta: -2.21649 genPhi: 0.714197
+found matched track pt: 10.9707
+Begin processing the 137th record. Run 1, Event 21417, LumiSection 218 at 07-Sep-2016 19:12:06.147 CDT
+got tau
+tau vis pt: 57.6819 genEta: -1.75926 genPhi: 1.06747
+found matched track pt: 59.9544
+Begin processing the 138th record. Run 1, Event 21418, LumiSection 218 at 07-Sep-2016 19:12:08.824 CDT
+got tau
+tau vis pt: 4.3921 genEta: -1.7519 genPhi: -1.0379
+found matched track pt: 2.34583
+Begin processing the 139th record. Run 1, Event 21419, LumiSection 218 at 07-Sep-2016 19:12:11.965 CDT
+got tau
+tau vis pt: 20.2676 genEta: 0.821259 genPhi: -2.98791
+found matched track pt: 12.5804
+Begin processing the 140th record. Run 1, Event 21420, LumiSection 218 at 07-Sep-2016 19:12:15.290 CDT
+got tau
+tau vis pt: 10.3381 genEta: 0.54231 genPhi: -2.92224
+found matched track pt: 7.18845
+Begin processing the 141st record. Run 1, Event 21421, LumiSection 218 at 07-Sep-2016 19:12:18.323 CDT
+got tau
+tau vis pt: 7.97436 genEta: -0.953737 genPhi: 2.91651
+found matched track pt: 8.06081
+Begin processing the 142nd record. Run 1, Event 21422, LumiSection 218 at 07-Sep-2016 19:12:21.668 CDT
+got tau
+tau vis pt: 6.69376 genEta: -2.6252 genPhi: -1.26714
+found matched track pt: 3.03158
+Begin processing the 143rd record. Run 1, Event 21423, LumiSection 218 at 07-Sep-2016 19:12:23.923 CDT
+got tau
+tau vis pt: 31.623 genEta: 0.547284 genPhi: -0.128579
+found matched track pt: 12.604
+Begin processing the 144th record. Run 1, Event 21424, LumiSection 218 at 07-Sep-2016 19:12:27.683 CDT
+got tau
+tau vis pt: 20.1891 genEta: -2.64447 genPhi: 2.16531
+Begin processing the 145th record. Run 1, Event 21425, LumiSection 218 at 07-Sep-2016 19:12:30.297 CDT
+got tau
+tau vis pt: 17.7869 genEta: 2.32918 genPhi: 1.11093
+found matched track pt: 7.51357
+Begin processing the 146th record. Run 1, Event 21426, LumiSection 218 at 07-Sep-2016 19:12:33.064 CDT
+got tau
+tau vis pt: 25.6366 genEta: 2.71172 genPhi: 1.70631
+Begin processing the 147th record. Run 1, Event 21427, LumiSection 218 at 07-Sep-2016 19:12:36.394 CDT
+got tau
+tau vis pt: 4.87196 genEta: 2.8942 genPhi: -1.71222
+Begin processing the 148th record. Run 1, Event 21428, LumiSection 218 at 07-Sep-2016 19:12:39.123 CDT
+got tau
+tau vis pt: 34.4234 genEta: -1.21097 genPhi: -2.27753
+found matched track pt: 34.3136
+Begin processing the 149th record. Run 1, Event 21429, LumiSection 218 at 07-Sep-2016 19:12:43.060 CDT
+got tau
+tau vis pt: 34.166 genEta: 0.506888 genPhi: -2.5208
+found matched track pt: 34.0687
+Begin processing the 150th record. Run 1, Event 21430, LumiSection 218 at 07-Sep-2016 19:12:45.508 CDT
+got tau
+tau vis pt: 33.3273 genEta: 2.16092 genPhi: -1.80961
+found matched track pt: 515.465
+Begin processing the 151st record. Run 1, Event 21431, LumiSection 218 at 07-Sep-2016 19:12:49.321 CDT
+got tau
+tau vis pt: 19.4988 genEta: 2.38433 genPhi: 1.44301
+found matched track pt: 19.0013
+Begin processing the 152nd record. Run 1, Event 21432, LumiSection 218 at 07-Sep-2016 19:12:52.513 CDT
+got tau
+tau vis pt: 60.5293 genEta: -0.437561 genPhi: 2.32531
+found matched track pt: 60.2449
+Begin processing the 153rd record. Run 1, Event 21433, LumiSection 218 at 07-Sep-2016 19:12:56.722 CDT
+got tau
+tau vis pt: 28.1175 genEta: 0.0285626 genPhi: 2.16936
+found matched track pt: 18.9107
+Begin processing the 154th record. Run 1, Event 21434, LumiSection 218 at 07-Sep-2016 19:13:00.221 CDT
+got tau
+tau vis pt: 7.51483 genEta: -0.683432 genPhi: 1.01088
+found matched track pt: 7.45921
+Begin processing the 155th record. Run 1, Event 21435, LumiSection 218 at 07-Sep-2016 19:13:03.053 CDT
+got tau
+tau vis pt: 9.23684 genEta: -1.60009 genPhi: 1.99749
+found matched track pt: 14.27
+Begin processing the 156th record. Run 1, Event 21436, LumiSection 218 at 07-Sep-2016 19:13:05.848 CDT
+got tau
+tau vis pt: 22.3464 genEta: -1.21633 genPhi: 2.13995
+found matched track pt: 19.0015
+Begin processing the 157th record. Run 1, Event 21437, LumiSection 218 at 07-Sep-2016 19:13:08.998 CDT
+got tau
+tau vis pt: 29.6426 genEta: 2.4122 genPhi: 2.51278
+found matched track pt: 21.9443
+Begin processing the 158th record. Run 1, Event 21438, LumiSection 218 at 07-Sep-2016 19:13:14.266 CDT
+got tau
+tau vis pt: 83.9578 genEta: 0.624544 genPhi: 2.49125
+found matched track pt: 46.567
+Begin processing the 159th record. Run 1, Event 21439, LumiSection 218 at 07-Sep-2016 19:13:17.902 CDT
+got tau
+tau vis pt: 26.5631 genEta: -2.74504 genPhi: 3.10936
+Begin processing the 160th record. Run 1, Event 21440, LumiSection 218 at 07-Sep-2016 19:13:20.740 CDT
+got tau
+tau vis pt: 27.9587 genEta: 0.204857 genPhi: -0.166938
+found matched track pt: 18.2317
+Begin processing the 161st record. Run 1, Event 21441, LumiSection 218 at 07-Sep-2016 19:13:23.989 CDT
+got tau
+tau vis pt: 63.1209 genEta: 0.900535 genPhi: -1.62905
+found matched track pt: 34.9108
+Begin processing the 162nd record. Run 1, Event 21442, LumiSection 218 at 07-Sep-2016 19:13:26.770 CDT
+got tau
+tau vis pt: 39.801 genEta: 1.74465 genPhi: -0.405789
+found matched track pt: 28.4956
+Begin processing the 163rd record. Run 1, Event 21443, LumiSection 218 at 07-Sep-2016 19:13:30.113 CDT
+got tau
+tau vis pt: 54.1609 genEta: -0.93925 genPhi: 2.67224
+found matched track pt: 2.61538
+Begin processing the 164th record. Run 1, Event 21444, LumiSection 218 at 07-Sep-2016 19:13:32.929 CDT
+got tau
+tau vis pt: 19.9254 genEta: -0.624866 genPhi: 0.449144
+found matched track pt: 19.7741
+Begin processing the 165th record. Run 1, Event 21445, LumiSection 218 at 07-Sep-2016 19:13:36.098 CDT
+got tau
+tau vis pt: 71.0032 genEta: 0.80159 genPhi: -1.84663
+found matched track pt: 71.5575
+Begin processing the 166th record. Run 1, Event 21446, LumiSection 218 at 07-Sep-2016 19:13:38.709 CDT
+got tau
+tau vis pt: 25.3822 genEta: -0.255584 genPhi: 0.0350128
+found matched track pt: 5.20315
+Begin processing the 167th record. Run 1, Event 21447, LumiSection 218 at 07-Sep-2016 19:13:41.384 CDT
+got tau
+tau vis pt: 33.9435 genEta: -1.07819 genPhi: -1.77621
+found matched track pt: 6.15519
+Begin processing the 168th record. Run 1, Event 21448, LumiSection 218 at 07-Sep-2016 19:13:44.301 CDT
+got tau
+tau vis pt: 17.8359 genEta: -2.24473 genPhi: 1.92919
+found matched track pt: 18.0042
+Begin processing the 169th record. Run 1, Event 21449, LumiSection 218 at 07-Sep-2016 19:13:47.572 CDT
+got tau
+tau vis pt: 34.8115 genEta: -2.57877 genPhi: 0.640532
+found matched track pt: 2.30194
+Begin processing the 170th record. Run 1, Event 21450, LumiSection 218 at 07-Sep-2016 19:13:50.912 CDT
+got tau
+tau vis pt: 39.8348 genEta: 1.88017 genPhi: -2.09473
+found matched track pt: 32.6028
+Begin processing the 171st record. Run 1, Event 21451, LumiSection 218 at 07-Sep-2016 19:13:53.995 CDT
+got tau
+tau vis pt: 18.2726 genEta: 2.5975 genPhi: 2.43749
+found matched track pt: 2.53336
+Begin processing the 172nd record. Run 1, Event 21452, LumiSection 218 at 07-Sep-2016 19:13:56.413 CDT
+got tau
+tau vis pt: 11.2925 genEta: -2.00682 genPhi: -2.51917
+found matched track pt: 51.8747
+Begin processing the 173rd record. Run 1, Event 21453, LumiSection 218 at 07-Sep-2016 19:14:00.394 CDT
+got tau
+tau vis pt: 34.1569 genEta: 0.892782 genPhi: -0.624203
+found matched track pt: 24.1341
+Begin processing the 174th record. Run 1, Event 21454, LumiSection 218 at 07-Sep-2016 19:14:03.964 CDT
+got tau
+tau vis pt: 68.0589 genEta: -2.86989 genPhi: 2.87836
+Begin processing the 175th record. Run 1, Event 21455, LumiSection 218 at 07-Sep-2016 19:14:07.572 CDT
+got tau
+tau vis pt: 39.7332 genEta: -1.77319 genPhi: 1.7536
+found matched track pt: 798.855
+Begin processing the 176th record. Run 1, Event 21456, LumiSection 218 at 07-Sep-2016 19:14:10.927 CDT
+got tau
+tau vis pt: 45.0009 genEta: 0.0725532 genPhi: -0.911116
+found matched track pt: 19.5603
+Begin processing the 177th record. Run 1, Event 21457, LumiSection 218 at 07-Sep-2016 19:14:13.891 CDT
+got tau
+tau vis pt: 10.0122 genEta: -0.549835 genPhi: -0.714242
+found matched track pt: 5.65825
+Begin processing the 178th record. Run 1, Event 21458, LumiSection 218 at 07-Sep-2016 19:14:17.074 CDT
+got tau
+tau vis pt: 51.9095 genEta: -2.07337 genPhi: 2.05034
+found matched track pt: 26.2244
+Begin processing the 179th record. Run 1, Event 21459, LumiSection 218 at 07-Sep-2016 19:14:20.787 CDT
+got tau
+tau vis pt: 73.1872 genEta: -2.98079 genPhi: -1.77176
+Begin processing the 180th record. Run 1, Event 21460, LumiSection 218 at 07-Sep-2016 19:14:23.652 CDT
+got tau
+tau vis pt: 12.7588 genEta: -1.41749 genPhi: 2.93316
+found matched track pt: 12.9127
+Begin processing the 181st record. Run 1, Event 21461, LumiSection 218 at 07-Sep-2016 19:14:26.747 CDT
+got tau
+tau vis pt: 44.5023 genEta: 0.100396 genPhi: 2.47145
+found matched track pt: 20.7666
+Begin processing the 182nd record. Run 1, Event 21462, LumiSection 218 at 07-Sep-2016 19:14:29.943 CDT
+got tau
+tau vis pt: 45.1813 genEta: -1.08533 genPhi: -0.968372
+found matched track pt: 33.8526
+Begin processing the 183rd record. Run 1, Event 21463, LumiSection 218 at 07-Sep-2016 19:14:34.827 CDT
+got tau
+tau vis pt: 10.5792 genEta: -0.675687 genPhi: 1.83853
+found matched track pt: 10.5826
+Begin processing the 184th record. Run 1, Event 21464, LumiSection 218 at 07-Sep-2016 19:14:38.230 CDT
+got tau
+tau vis pt: 48.0069 genEta: -1.0386 genPhi: 1.86513
+found matched track pt: 8.65934
+Begin processing the 185th record. Run 1, Event 21465, LumiSection 218 at 07-Sep-2016 19:14:41.363 CDT
+got tau
+tau vis pt: 4.0435 genEta: 0.885531 genPhi: 1.19425
+found matched track pt: 4.02858
+Begin processing the 186th record. Run 1, Event 21466, LumiSection 218 at 07-Sep-2016 19:14:43.806 CDT
+got tau
+tau vis pt: 32.0027 genEta: -1.2197 genPhi: -0.732863
+found matched track pt: 31.9835
+Begin processing the 187th record. Run 1, Event 21467, LumiSection 218 at 07-Sep-2016 19:14:47.967 CDT
+got tau
+tau vis pt: 37.4526 genEta: -0.625753 genPhi: -0.401912
+found matched track pt: 40.601
+Begin processing the 188th record. Run 1, Event 21468, LumiSection 218 at 07-Sep-2016 19:14:50.824 CDT
+got tau
+tau vis pt: 39.1686 genEta: 2.36422 genPhi: 0.451094
+found matched track pt: 25.3302
+Begin processing the 189th record. Run 1, Event 21469, LumiSection 218 at 07-Sep-2016 19:14:53.608 CDT
+got tau
+tau vis pt: 10.8037 genEta: 0.370383 genPhi: 2.83468
+found matched track pt: 7.10132
+Begin processing the 190th record. Run 1, Event 21470, LumiSection 218 at 07-Sep-2016 19:14:56.193 CDT
+got tau
+tau vis pt: 3.38606 genEta: -1.60245 genPhi: 1.5691
+found matched track pt: 4.22945
+Begin processing the 191st record. Run 1, Event 21471, LumiSection 218 at 07-Sep-2016 19:14:59.930 CDT
+got tau
+tau vis pt: 16.8863 genEta: -0.915694 genPhi: 1.87363
+found matched track pt: 3.42062
+Begin processing the 192nd record. Run 1, Event 21472, LumiSection 218 at 07-Sep-2016 19:15:03.870 CDT
+got tau
+tau vis pt: 72.4421 genEta: -2.59713 genPhi: 1.49385
+Begin processing the 193rd record. Run 1, Event 21473, LumiSection 218 at 07-Sep-2016 19:15:06.249 CDT
+got tau
+tau vis pt: 20.0959 genEta: -0.807701 genPhi: 1.4747
+found matched track pt: 20.3144
+Begin processing the 194th record. Run 1, Event 21474, LumiSection 218 at 07-Sep-2016 19:15:10.799 CDT
+got tau
+tau vis pt: 72.2244 genEta: 2.71967 genPhi: -2.85045
+found matched track pt: 2.03229
+Begin processing the 195th record. Run 1, Event 21475, LumiSection 218 at 07-Sep-2016 19:15:14.298 CDT
+got tau
+tau vis pt: 65.4668 genEta: 1.54296 genPhi: 0.686066
+found matched track pt: 194.122
+Begin processing the 196th record. Run 1, Event 21476, LumiSection 218 at 07-Sep-2016 19:15:19.578 CDT
+got tau
+tau vis pt: 32.6929 genEta: 2.02 genPhi: -2.97324
+found matched track pt: 47.7728
+Begin processing the 197th record. Run 1, Event 21477, LumiSection 218 at 07-Sep-2016 19:15:23.258 CDT
+got tau
+tau vis pt: 52.6304 genEta: -0.194491 genPhi: 0.172453
+found matched track pt: 42.4092
+Begin processing the 198th record. Run 1, Event 21478, LumiSection 218 at 07-Sep-2016 19:15:26.671 CDT
+got tau
+tau vis pt: 71.2094 genEta: 2.38238 genPhi: 0.101697
+found matched track pt: 31.737
+Begin processing the 199th record. Run 1, Event 21479, LumiSection 218 at 07-Sep-2016 19:15:30.478 CDT
+got tau
+tau vis pt: 13.1263 genEta: -1.84246 genPhi: 2.03217
+found matched track pt: 87.7353
+Begin processing the 200th record. Run 1, Event 21480, LumiSection 218 at 07-Sep-2016 19:15:33.625 CDT
+got tau
+tau vis pt: 33.7113 genEta: 1.27272 genPhi: -2.6488
+found matched track pt: 33.6088
+Begin processing the 201st record. Run 1, Event 25601, LumiSection 261 at 07-Sep-2016 19:15:37.625 CDT
+got tau
+tau vis pt: 39.2918 genEta: 2.36506 genPhi: -1.15936
+found matched track pt: 37.9433
+Begin processing the 202nd record. Run 1, Event 25602, LumiSection 261 at 07-Sep-2016 19:15:41.256 CDT
+got tau
+tau vis pt: 27.0614 genEta: 0.0710028 genPhi: 0.0108068
+found matched track pt: 353.947
+Begin processing the 203rd record. Run 1, Event 25603, LumiSection 261 at 07-Sep-2016 19:15:46.073 CDT
+got tau
+tau vis pt: 53.2793 genEta: -2.216 genPhi: 0.206384
+found matched track pt: 20.7115
+Begin processing the 204th record. Run 1, Event 25604, LumiSection 261 at 07-Sep-2016 19:15:49.216 CDT
+got tau
+tau vis pt: 63.345 genEta: -0.853275 genPhi: 0.095831
+found matched track pt: 34.6136
+Begin processing the 205th record. Run 1, Event 25605, LumiSection 261 at 07-Sep-2016 19:15:51.889 CDT
+got tau
+tau vis pt: 14.3364 genEta: 0.626178 genPhi: -0.186251
+found matched track pt: 6.81861
+Begin processing the 206th record. Run 1, Event 25606, LumiSection 261 at 07-Sep-2016 19:15:55.265 CDT
+got tau
+tau vis pt: 36.954 genEta: -0.677357 genPhi: -0.702274
+found matched track pt: 9.54067
+Begin processing the 207th record. Run 1, Event 25607, LumiSection 261 at 07-Sep-2016 19:15:58.387 CDT
+got tau
+tau vis pt: 36.5957 genEta: -2.67094 genPhi: -2.03853
+found matched track pt: 2.06502
+Begin processing the 208th record. Run 1, Event 25608, LumiSection 261 at 07-Sep-2016 19:16:01.281 CDT
+got tau
+tau vis pt: 27.2791 genEta: 1.16717 genPhi: 0.175185
+found matched track pt: 15.6511
+Begin processing the 209th record. Run 1, Event 25609, LumiSection 261 at 07-Sep-2016 19:16:04.781 CDT
+got tau
+tau vis pt: 15.1765 genEta: 1.28168 genPhi: 1.50973
+found matched track pt: 4.98857
+Begin processing the 210th record. Run 1, Event 25610, LumiSection 261 at 07-Sep-2016 19:16:08.060 CDT
+got tau
+tau vis pt: 27.4047 genEta: 0.975816 genPhi: -2.99855
+found matched track pt: 24.724
+Begin processing the 211th record. Run 1, Event 25611, LumiSection 261 at 07-Sep-2016 19:16:09.865 CDT
+got tau
+tau vis pt: 26.2758 genEta: 1.77761 genPhi: -1.25426
+found matched track pt: 6.38811
+Begin processing the 212th record. Run 1, Event 25612, LumiSection 261 at 07-Sep-2016 19:16:13.811 CDT
+got tau
+tau vis pt: 21.353 genEta: 2.77651 genPhi: 1.21311
+found matched track pt: 2.3736
+Begin processing the 213th record. Run 1, Event 25613, LumiSection 261 at 07-Sep-2016 19:16:17.578 CDT
+got tau
+tau vis pt: 15.7642 genEta: 1.25049 genPhi: -3.07133
+found matched track pt: 15.3947
+Begin processing the 214th record. Run 1, Event 25614, LumiSection 261 at 07-Sep-2016 19:16:21.287 CDT
+got tau
+tau vis pt: 47.1144 genEta: -0.239516 genPhi: 0.201802
+found matched track pt: 47.6975
+Begin processing the 215th record. Run 1, Event 25615, LumiSection 261 at 07-Sep-2016 19:16:24.058 CDT
+got tau
+tau vis pt: 76.033 genEta: 2.52876 genPhi: -0.933699
+found matched track pt: 2.60313
+Begin processing the 216th record. Run 1, Event 25616, LumiSection 261 at 07-Sep-2016 19:16:27.439 CDT
+got tau
+tau vis pt: 71.5199 genEta: -1.22407 genPhi: 1.63368
+found matched track pt: 38.6055
+Begin processing the 217th record. Run 1, Event 25617, LumiSection 261 at 07-Sep-2016 19:16:30.784 CDT
+got tau
+tau vis pt: 14.2874 genEta: -0.391916 genPhi: 1.9832
+found matched track pt: 14.264
+Begin processing the 218th record. Run 1, Event 25618, LumiSection 261 at 07-Sep-2016 19:16:34.460 CDT
+got tau
+tau vis pt: 21.2807 genEta: 1.35716 genPhi: -2.34652
+found matched track pt: 10.2277
+Begin processing the 219th record. Run 1, Event 25619, LumiSection 261 at 07-Sep-2016 19:16:38.335 CDT
+got tau
+tau vis pt: 33.6146 genEta: -0.446391 genPhi: 1.69605
+found matched track pt: 33.177
+Begin processing the 220th record. Run 1, Event 25620, LumiSection 261 at 07-Sep-2016 19:16:42.496 CDT
+got tau
+tau vis pt: 53.3574 genEta: 1.64324 genPhi: 0.678186
+found matched track pt: 53.9121
+Begin processing the 221st record. Run 1, Event 25621, LumiSection 261 at 07-Sep-2016 19:16:45.798 CDT
+got tau
+tau vis pt: 14.9025 genEta: 1.90882 genPhi: 2.28665
+found matched track pt: 15.0846
+Begin processing the 222nd record. Run 1, Event 25622, LumiSection 261 at 07-Sep-2016 19:16:49.327 CDT
+got tau
+tau vis pt: 9.48022 genEta: -1.98158 genPhi: -1.92583
+found matched track pt: 66.9772
+Begin processing the 223rd record. Run 1, Event 25623, LumiSection 261 at 07-Sep-2016 19:16:52.791 CDT
+got tau
+tau vis pt: 13.1565 genEta: 2.39986 genPhi: 2.17992
+found matched track pt: 17.2009
+Begin processing the 224th record. Run 1, Event 25624, LumiSection 261 at 07-Sep-2016 19:16:56.252 CDT
+got tau
+tau vis pt: 43.4786 genEta: -0.713179 genPhi: -1.02343
+found matched track pt: 13.7466
+Begin processing the 225th record. Run 1, Event 25625, LumiSection 261 at 07-Sep-2016 19:16:58.763 CDT
+got tau
+tau vis pt: 26.0693 genEta: 0.0656177 genPhi: 1.49599
+found matched track pt: 6.23573
+Begin processing the 226th record. Run 1, Event 25626, LumiSection 261 at 07-Sep-2016 19:17:02.697 CDT
+got tau
+tau vis pt: 31.9632 genEta: 2.25543 genPhi: 0.378796
+found matched track pt: 39.0602
+Begin processing the 227th record. Run 1, Event 25627, LumiSection 261 at 07-Sep-2016 19:17:06.514 CDT
+got tau
+tau vis pt: 50.2455 genEta: 1.75097 genPhi: 3.09211
+found matched track pt: 42.3552
+Begin processing the 228th record. Run 1, Event 25628, LumiSection 261 at 07-Sep-2016 19:17:09.232 CDT
+got tau
+tau vis pt: 10.2526 genEta: -2.36644 genPhi: 2.2372
+found matched track pt: 2.57942
+Begin processing the 229th record. Run 1, Event 25629, LumiSection 261 at 07-Sep-2016 19:17:12.562 CDT
+got tau
+tau vis pt: 27.4113 genEta: -2.02524 genPhi: -1.41296
+found matched track pt: 9.94183
+Begin processing the 230th record. Run 1, Event 25630, LumiSection 261 at 07-Sep-2016 19:17:14.917 CDT
+got tau
+tau vis pt: 73.7052 genEta: 0.550128 genPhi: -1.30642
+found matched track pt: 4.61014
+Begin processing the 231st record. Run 1, Event 25631, LumiSection 261 at 07-Sep-2016 19:17:18.279 CDT
+got tau
+tau vis pt: 36.0947 genEta: 1.36835 genPhi: -1.61826
+found matched track pt: 16.0814
+Begin processing the 232nd record. Run 1, Event 25632, LumiSection 261 at 07-Sep-2016 19:17:23.152 CDT
+got tau
+tau vis pt: 51.7952 genEta: 0.141261 genPhi: -2.26753
+found matched track pt: 51.3529
+Begin processing the 233rd record. Run 1, Event 25633, LumiSection 261 at 07-Sep-2016 19:17:26.679 CDT
+got tau
+tau vis pt: 49.0096 genEta: -0.232352 genPhi: -0.468831
+found matched track pt: 51.0094
+Begin processing the 234th record. Run 1, Event 25634, LumiSection 261 at 07-Sep-2016 19:17:29.319 CDT
+got tau
+tau vis pt: 9.32006 genEta: 1.50434 genPhi: -1.10992
+found matched track pt: 2.88002
+Begin processing the 235th record. Run 1, Event 25635, LumiSection 261 at 07-Sep-2016 19:17:32.069 CDT
+got tau
+tau vis pt: 63.9495 genEta: 2.81719 genPhi: 0.419503
+Begin processing the 236th record. Run 1, Event 25636, LumiSection 261 at 07-Sep-2016 19:17:34.776 CDT
+got tau
+tau vis pt: 16.5416 genEta: 2.81132 genPhi: -2.14097
+Begin processing the 237th record. Run 1, Event 25637, LumiSection 261 at 07-Sep-2016 19:17:38.027 CDT
+got tau
+tau vis pt: 18.9694 genEta: 1.76447 genPhi: 0.532503
+found matched track pt: 13.6794
+Begin processing the 238th record. Run 1, Event 25638, LumiSection 261 at 07-Sep-2016 19:17:41.056 CDT
+got tau
+tau vis pt: 17.7929 genEta: -1.55484 genPhi: -0.0942977
+found matched track pt: 18.0486
+Begin processing the 239th record. Run 1, Event 25639, LumiSection 261 at 07-Sep-2016 19:17:44.927 CDT
+got tau
+tau vis pt: 26.065 genEta: -2.07799 genPhi: -2.98485
+found matched track pt: 23.3531
+Begin processing the 240th record. Run 1, Event 25640, LumiSection 261 at 07-Sep-2016 19:17:48.032 CDT
+got tau
+tau vis pt: 9.82671 genEta: -1.43776 genPhi: -1.57431
+found matched track pt: 3.70572
+Begin processing the 241st record. Run 1, Event 25641, LumiSection 261 at 07-Sep-2016 19:17:51.325 CDT
+got tau
+tau vis pt: 72.9057 genEta: -1.52443 genPhi: 1.75422
+found matched track pt: 36.6343
+Begin processing the 242nd record. Run 1, Event 25642, LumiSection 261 at 07-Sep-2016 19:17:54.383 CDT
+got tau
+tau vis pt: 20.5596 genEta: 1.98742 genPhi: 1.28395
+found matched track pt: 17.7173
+Begin processing the 243rd record. Run 1, Event 25643, LumiSection 261 at 07-Sep-2016 19:17:57.157 CDT
+got tau
+tau vis pt: 41.2438 genEta: -0.275827 genPhi: -1.74222
+found matched track pt: 41.3289
+Begin processing the 244th record. Run 1, Event 25644, LumiSection 261 at 07-Sep-2016 19:18:00.079 CDT
+got tau
+tau vis pt: 43.8529 genEta: -2.37242 genPhi: 1.78835
+found matched track pt: 31.9732
+Begin processing the 245th record. Run 1, Event 25645, LumiSection 261 at 07-Sep-2016 19:18:03.271 CDT
+got tau
+tau vis pt: 55.751 genEta: -1.45184 genPhi: 2.57689
+found matched track pt: 65.2794
+Begin processing the 246th record. Run 1, Event 25646, LumiSection 261 at 07-Sep-2016 19:18:06.029 CDT
+got tau
+tau vis pt: 40.035 genEta: 1.03353 genPhi: -0.741643
+found matched track pt: 22.8691
+Begin processing the 247th record. Run 1, Event 25647, LumiSection 261 at 07-Sep-2016 19:18:09.181 CDT
+got tau
+tau vis pt: 44.7093 genEta: 0.730379 genPhi: -2.26647
+found matched track pt: 8.48192
+Begin processing the 248th record. Run 1, Event 25648, LumiSection 261 at 07-Sep-2016 19:18:12.797 CDT
+got tau
+tau vis pt: 44.2893 genEta: 1.8821 genPhi: -2.06414
+found matched track pt: 40.3034
+Begin processing the 249th record. Run 1, Event 25649, LumiSection 261 at 07-Sep-2016 19:18:17.351 CDT
+got tau
+tau vis pt: 87.5248 genEta: -0.188012 genPhi: -0.957949
+found matched track pt: 46.3676
+Begin processing the 250th record. Run 1, Event 25650, LumiSection 261 at 07-Sep-2016 19:18:19.941 CDT
+got tau
+tau vis pt: 8.40136 genEta: -2.12725 genPhi: 2.4335
+found matched track pt: 2.67241
+Begin processing the 251st record. Run 1, Event 25651, LumiSection 261 at 07-Sep-2016 19:18:22.699 CDT
+got tau
+tau vis pt: 22.5145 genEta: 0.820551 genPhi: -2.14749
+found matched track pt: 24.5712
+Begin processing the 252nd record. Run 1, Event 25652, LumiSection 261 at 07-Sep-2016 19:18:24.517 CDT
+got tau
+tau vis pt: 57.6164 genEta: -1.04846 genPhi: 0.679775
+found matched track pt: 5.12406
+Begin processing the 253rd record. Run 1, Event 25653, LumiSection 261 at 07-Sep-2016 19:18:27.868 CDT
+got tau
+tau vis pt: 77.7172 genEta: 1.49112 genPhi: 1.55537
+found matched track pt: 34.5315
+Begin processing the 254th record. Run 1, Event 25654, LumiSection 261 at 07-Sep-2016 19:18:29.608 CDT
+got tau
+tau vis pt: 46.5962 genEta: -0.845171 genPhi: -2.17721
+found matched track pt: 30.6621
+Begin processing the 255th record. Run 1, Event 25655, LumiSection 261 at 07-Sep-2016 19:18:33.412 CDT
+got tau
+tau vis pt: 25.0011 genEta: 2.00073 genPhi: -2.8409
+found matched track pt: 20.0888
+Begin processing the 256th record. Run 1, Event 25656, LumiSection 261 at 07-Sep-2016 19:18:37.309 CDT
+got tau
+tau vis pt: 25.2266 genEta: -0.179192 genPhi: -2.75821
+found matched track pt: 13.6671
+Begin processing the 257th record. Run 1, Event 25657, LumiSection 261 at 07-Sep-2016 19:18:39.810 CDT
+got tau
+tau vis pt: 19.247 genEta: 1.80138 genPhi: -2.53109
+found matched track pt: 18.6402
+Begin processing the 258th record. Run 1, Event 25658, LumiSection 261 at 07-Sep-2016 19:18:42.839 CDT
+got tau
+tau vis pt: 60.7259 genEta: -2.46929 genPhi: 0.596178
+found matched track pt: 31.4841
+Begin processing the 259th record. Run 1, Event 25659, LumiSection 261 at 07-Sep-2016 19:18:48.196 CDT
+got tau
+tau vis pt: 26.1238 genEta: 0.797034 genPhi: -0.26206
+found matched track pt: 25.9627
+Begin processing the 260th record. Run 1, Event 25660, LumiSection 261 at 07-Sep-2016 19:18:50.533 CDT
+got tau
+tau vis pt: 89.631 genEta: 1.47934 genPhi: 2.84716
+found matched track pt: 42.171
+Begin processing the 261st record. Run 1, Event 25661, LumiSection 261 at 07-Sep-2016 19:18:53.318 CDT
+got tau
+tau vis pt: 17.246 genEta: 2.17845 genPhi: -1.19325
+found matched track pt: 3.92977
+Begin processing the 262nd record. Run 1, Event 25662, LumiSection 261 at 07-Sep-2016 19:18:57.452 CDT
+got tau
+tau vis pt: 22.3776 genEta: 0.900898 genPhi: 1.45301
+found matched track pt: 5.21498
+Begin processing the 263rd record. Run 1, Event 25663, LumiSection 261 at 07-Sep-2016 19:19:00.602 CDT
+got tau
+tau vis pt: 54.8917 genEta: -1.53244 genPhi: -1.62825
+found matched track pt: 30.8945
+Begin processing the 264th record. Run 1, Event 25664, LumiSection 261 at 07-Sep-2016 19:19:03.439 CDT
+got tau
+tau vis pt: 48.0519 genEta: -0.8799 genPhi: 0.14628
+found matched track pt: 24.2359
+Begin processing the 265th record. Run 1, Event 25665, LumiSection 261 at 07-Sep-2016 19:19:07.102 CDT
+got tau
+tau vis pt: 8.05523 genEta: -2.45735 genPhi: -1.80485
+found matched track pt: 2.65853
+Begin processing the 266th record. Run 1, Event 25666, LumiSection 261 at 07-Sep-2016 19:19:09.278 CDT
+got tau
+tau vis pt: 30.5062 genEta: 2.87319 genPhi: -2.16148
+Begin processing the 267th record. Run 1, Event 25667, LumiSection 261 at 07-Sep-2016 19:19:12.445 CDT
+got tau
+tau vis pt: 22.7718 genEta: -1.06017 genPhi: 1.58003
+found matched track pt: 10.0044
+Begin processing the 268th record. Run 1, Event 25668, LumiSection 261 at 07-Sep-2016 19:19:15.650 CDT
+got tau
+tau vis pt: 56.6374 genEta: 0.862416 genPhi: -0.97916
+found matched track pt: 55.6163
+Begin processing the 269th record. Run 1, Event 25669, LumiSection 261 at 07-Sep-2016 19:19:18.318 CDT
+got tau
+tau vis pt: 11.2526 genEta: -2.27503 genPhi: -0.401698
+found matched track pt: 3.66014
+Begin processing the 270th record. Run 1, Event 25670, LumiSection 261 at 07-Sep-2016 19:19:23.130 CDT
+got tau
+tau vis pt: 30.4049 genEta: 2.8702 genPhi: -1.61148
+Begin processing the 271st record. Run 1, Event 25671, LumiSection 261 at 07-Sep-2016 19:19:25.783 CDT
+got tau
+tau vis pt: 28.9632 genEta: -2.52164 genPhi: -0.390629
+found matched track pt: 5.95886
+Begin processing the 272nd record. Run 1, Event 25672, LumiSection 261 at 07-Sep-2016 19:19:29.198 CDT
+got tau
+tau vis pt: 59.6336 genEta: 2.59414 genPhi: -1.58112
+Begin processing the 273rd record. Run 1, Event 25673, LumiSection 261 at 07-Sep-2016 19:19:32.019 CDT
+got tau
+tau vis pt: 56.7493 genEta: 2.34514 genPhi: 0.793056
+found matched track pt: 4.32011
+Begin processing the 274th record. Run 1, Event 25674, LumiSection 261 at 07-Sep-2016 19:19:34.072 CDT
+got tau
+tau vis pt: 43.3215 genEta: -1.19093 genPhi: 1.41658
+found matched track pt: 34.107
+Begin processing the 275th record. Run 1, Event 25675, LumiSection 261 at 07-Sep-2016 19:19:38.317 CDT
+got tau
+tau vis pt: 56.0495 genEta: 2.748 genPhi: 2.4883
+Begin processing the 276th record. Run 1, Event 25676, LumiSection 261 at 07-Sep-2016 19:19:41.705 CDT
+got tau
+tau vis pt: 25.1084 genEta: 0.828913 genPhi: -0.215336
+found matched track pt: 25.0517
+Begin processing the 277th record. Run 1, Event 25677, LumiSection 261 at 07-Sep-2016 19:19:44.739 CDT
+got tau
+tau vis pt: 56.5437 genEta: 2.32065 genPhi: 0.869561
+found matched track pt: 31.6599
+Begin processing the 278th record. Run 1, Event 25678, LumiSection 261 at 07-Sep-2016 19:19:49.266 CDT
+got tau
+tau vis pt: 23.4253 genEta: 1.67797 genPhi: 1.55773
+found matched track pt: 13.5702
+Begin processing the 279th record. Run 1, Event 25679, LumiSection 261 at 07-Sep-2016 19:19:51.850 CDT
+got tau
+tau vis pt: 86.534 genEta: 2.57537 genPhi: -2.82545
+Begin processing the 280th record. Run 1, Event 25680, LumiSection 261 at 07-Sep-2016 19:19:55.240 CDT
+got tau
+tau vis pt: 50.4241 genEta: -0.319101 genPhi: -1.69192
+found matched track pt: 3.81992
+Begin processing the 281st record. Run 1, Event 25681, LumiSection 261 at 07-Sep-2016 19:19:57.979 CDT
+got tau
+tau vis pt: 30.7226 genEta: 1.51156 genPhi: 1.6517
+found matched track pt: 10.2616
+Begin processing the 282nd record. Run 1, Event 25682, LumiSection 261 at 07-Sep-2016 19:20:00.592 CDT
+got tau
+tau vis pt: 66.9255 genEta: -1.28807 genPhi: -2.81681
+found matched track pt: 12.512
+Begin processing the 283rd record. Run 1, Event 25683, LumiSection 261 at 07-Sep-2016 19:20:04.548 CDT
+got tau
+tau vis pt: 14.6504 genEta: -2.57505 genPhi: -2.15646
+found matched track pt: 3.6363
+Begin processing the 284th record. Run 1, Event 25684, LumiSection 261 at 07-Sep-2016 19:20:07.734 CDT
+got tau
+tau vis pt: 12.083 genEta: -1.31751 genPhi: 1.36768
+found matched track pt: 8.62064
+Begin processing the 285th record. Run 1, Event 25685, LumiSection 261 at 07-Sep-2016 19:20:12.853 CDT
+got tau
+tau vis pt: 12.73 genEta: -1.59154 genPhi: 1.96704
+found matched track pt: 6.04688
+Begin processing the 286th record. Run 1, Event 25686, LumiSection 261 at 07-Sep-2016 19:20:14.919 CDT
+got tau
+tau vis pt: 39.6226 genEta: 2.06495 genPhi: 2.87986
+found matched track pt: 3.49181
+Begin processing the 287th record. Run 1, Event 25687, LumiSection 261 at 07-Sep-2016 19:20:17.581 CDT
+got tau
+tau vis pt: 31.3348 genEta: -0.220357 genPhi: -2.89655
+found matched track pt: 8.68649
+Begin processing the 288th record. Run 1, Event 25688, LumiSection 261 at 07-Sep-2016 19:20:20.878 CDT
+got tau
+tau vis pt: 36.6639 genEta: 2.03866 genPhi: -2.18905
+found matched track pt: 37.9281
+Begin processing the 289th record. Run 1, Event 25689, LumiSection 261 at 07-Sep-2016 19:20:24.935 CDT
+got tau
+tau vis pt: 18.5519 genEta: -2.35278 genPhi: 0.126709
+found matched track pt: 12.9647
+Begin processing the 290th record. Run 1, Event 25690, LumiSection 261 at 07-Sep-2016 19:20:27.659 CDT
+got tau
+tau vis pt: 82.9732 genEta: 2.79139 genPhi: 1.64424
+Begin processing the 291st record. Run 1, Event 25691, LumiSection 261 at 07-Sep-2016 19:20:31.145 CDT
+got tau
+tau vis pt: 24.4047 genEta: -0.139635 genPhi: 2.17299
+found matched track pt: 22.3155
+Begin processing the 292nd record. Run 1, Event 25692, LumiSection 261 at 07-Sep-2016 19:20:34.384 CDT
+got tau
+tau vis pt: 73.4141 genEta: 0.859974 genPhi: 0.686859
+found matched track pt: 27.5239
+Begin processing the 293rd record. Run 1, Event 25693, LumiSection 261 at 07-Sep-2016 19:20:37.040 CDT
+got tau
+tau vis pt: 89.8175 genEta: -0.999431 genPhi: -1.82107
+found matched track pt: 7.51393
+Begin processing the 294th record. Run 1, Event 25694, LumiSection 261 at 07-Sep-2016 19:20:40.759 CDT
+got tau
+tau vis pt: 57.787 genEta: 1.80141 genPhi: -2.68439
+found matched track pt: 25.9971
+Begin processing the 295th record. Run 1, Event 25695, LumiSection 261 at 07-Sep-2016 19:20:44.633 CDT
+got tau
+tau vis pt: 20.3517 genEta: -0.386951 genPhi: 2.8113
+found matched track pt: 13.9613
+Begin processing the 296th record. Run 1, Event 25696, LumiSection 261 at 07-Sep-2016 19:20:47.962 CDT
+got tau
+tau vis pt: 22.746 genEta: -2.05162 genPhi: 1.87705
+found matched track pt: 18.6675
+Begin processing the 297th record. Run 1, Event 25697, LumiSection 261 at 07-Sep-2016 19:20:51.374 CDT
+got tau
+tau vis pt: 32.6139 genEta: -2.97204 genPhi: -1.99935
+Begin processing the 298th record. Run 1, Event 25698, LumiSection 261 at 07-Sep-2016 19:20:54.979 CDT
+got tau
+tau vis pt: 39.5765 genEta: -0.478654 genPhi: 2.89289
+found matched track pt: 22.0231
+Begin processing the 299th record. Run 1, Event 25699, LumiSection 261 at 07-Sep-2016 19:20:58.466 CDT
+got tau
+tau vis pt: 56.4235 genEta: 0.515961 genPhi: 2.10029
+found matched track pt: 45.9927
+Begin processing the 300th record. Run 1, Event 25700, LumiSection 261 at 07-Sep-2016 19:21:01.626 CDT
+got tau
+tau vis pt: 7.99322 genEta: 2.93851 genPhi: -2.698
+found matched track pt: 2.52952
+Begin processing the 301st record. Run 1, Event 33921, LumiSection 345 at 07-Sep-2016 19:21:04.246 CDT
+got tau
+tau vis pt: 34.5481 genEta: -0.230356 genPhi: -2.49054
+found matched track pt: 26.9381
+Begin processing the 302nd record. Run 1, Event 33922, LumiSection 345 at 07-Sep-2016 19:21:07.422 CDT
+got tau
+tau vis pt: 12.0028 genEta: -2.69128 genPhi: -1.56238
+Begin processing the 303rd record. Run 1, Event 33923, LumiSection 345 at 07-Sep-2016 19:21:11.413 CDT
+got tau
+tau vis pt: 58.5691 genEta: -2.40809 genPhi: -2.76941
+found matched track pt: 27.3773
+Begin processing the 304th record. Run 1, Event 33924, LumiSection 345 at 07-Sep-2016 19:21:14.026 CDT
+got tau
+tau vis pt: 1.96231 genEta: 1.13336 genPhi: -2.67147
+found matched track pt: 4.07425
+Begin processing the 305th record. Run 1, Event 33925, LumiSection 345 at 07-Sep-2016 19:21:17.530 CDT
+got tau
+tau vis pt: 52.6335 genEta: -2.04607 genPhi: -0.403289
+found matched track pt: 56.9895
+Begin processing the 306th record. Run 1, Event 33926, LumiSection 345 at 07-Sep-2016 19:21:21.441 CDT
+got tau
+tau vis pt: 13.2 genEta: 2.4593 genPhi: -1.98653
+found matched track pt: 15.5888
+Begin processing the 307th record. Run 1, Event 33927, LumiSection 345 at 07-Sep-2016 19:21:24.060 CDT
+got tau
+tau vis pt: 32.1096 genEta: 0.0711896 genPhi: 2.06066
+found matched track pt: 31.8638
+Begin processing the 308th record. Run 1, Event 33928, LumiSection 345 at 07-Sep-2016 19:21:28.347 CDT
+got tau
+tau vis pt: 11.7761 genEta: -0.656215 genPhi: 1.9834
+found matched track pt: 11.7433
+Begin processing the 309th record. Run 1, Event 33929, LumiSection 345 at 07-Sep-2016 19:21:30.930 CDT
+got tau
+tau vis pt: 72.0562 genEta: -2.32457 genPhi: -2.57643
+found matched track pt: 78.842
+Begin processing the 310th record. Run 1, Event 33930, LumiSection 345 at 07-Sep-2016 19:21:33.796 CDT
+got tau
+tau vis pt: 25.8601 genEta: 2.74222 genPhi: 1.34346
+found matched track pt: 10.1781
+Begin processing the 311th record. Run 1, Event 33931, LumiSection 345 at 07-Sep-2016 19:21:38.088 CDT
+got tau
+tau vis pt: 7.0081 genEta: -1.92853 genPhi: 3.0552
+found matched track pt: 3.67904
+Begin processing the 312th record. Run 1, Event 33932, LumiSection 345 at 07-Sep-2016 19:21:42.025 CDT
+got tau
+tau vis pt: 7.42514 genEta: 1.14866 genPhi: 1.61605
+found matched track pt: 5.95548
+Begin processing the 313th record. Run 1, Event 33933, LumiSection 345 at 07-Sep-2016 19:21:44.846 CDT
+got tau
+tau vis pt: 41.8763 genEta: 2.10514 genPhi: -0.00936211
+found matched track pt: 11.7552
+Begin processing the 314th record. Run 1, Event 33934, LumiSection 345 at 07-Sep-2016 19:21:48.379 CDT
+got tau
+tau vis pt: 50.4041 genEta: -1.52079 genPhi: 2.74908
+found matched track pt: 35.5309
+Begin processing the 315th record. Run 1, Event 33935, LumiSection 345 at 07-Sep-2016 19:21:51.804 CDT
+got tau
+tau vis pt: 83.1656 genEta: -1.75435 genPhi: -2.2115
+found matched track pt: 172.532
+Begin processing the 316th record. Run 1, Event 33936, LumiSection 345 at 07-Sep-2016 19:21:54.964 CDT
+got tau
+tau vis pt: 22.1261 genEta: -1.64235 genPhi: -2.34756
+found matched track pt: 5.34037
+Begin processing the 317th record. Run 1, Event 33937, LumiSection 345 at 07-Sep-2016 19:21:58.013 CDT
+got tau
+tau vis pt: 47.67 genEta: 1.69605 genPhi: -0.782978
+found matched track pt: 21.7061
+Begin processing the 318th record. Run 1, Event 33938, LumiSection 345 at 07-Sep-2016 19:22:01.413 CDT
+got tau
+tau vis pt: 21.1253 genEta: -0.605037 genPhi: -2.86539
+found matched track pt: 18.0067
+Begin processing the 319th record. Run 1, Event 33939, LumiSection 345 at 07-Sep-2016 19:22:04.683 CDT
+got tau
+tau vis pt: 67.4265 genEta: -2.84722 genPhi: 0.261894
+Begin processing the 320th record. Run 1, Event 33940, LumiSection 345 at 07-Sep-2016 19:22:08.528 CDT
+got tau
+tau vis pt: 33.8289 genEta: 0.878996 genPhi: 1.0116
+found matched track pt: 77.9494
+Begin processing the 321st record. Run 1, Event 33941, LumiSection 345 at 07-Sep-2016 19:22:10.781 CDT
+got tau
+tau vis pt: 34.7959 genEta: 0.443843 genPhi: 2.36905
+found matched track pt: 34.8089
+Begin processing the 322nd record. Run 1, Event 33942, LumiSection 345 at 07-Sep-2016 19:22:13.200 CDT
+got tau
+tau vis pt: 45.6698 genEta: -2.27285 genPhi: -2.55191
+found matched track pt: 53.9442
+Begin processing the 323rd record. Run 1, Event 33943, LumiSection 345 at 07-Sep-2016 19:22:17.465 CDT
+got tau
+tau vis pt: 75.8415 genEta: -1.65965 genPhi: 1.3379
+found matched track pt: 78.977
+Begin processing the 324th record. Run 1, Event 33944, LumiSection 345 at 07-Sep-2016 19:22:21.138 CDT
+got tau
+tau vis pt: 35.7552 genEta: 2.19721 genPhi: -2.29977
+found matched track pt: 3.13684
+Begin processing the 325th record. Run 1, Event 33945, LumiSection 345 at 07-Sep-2016 19:22:23.963 CDT
+got tau
+tau vis pt: 13.9563 genEta: 1.78482 genPhi: -2.97952
+found matched track pt: 8.24128
+Begin processing the 326th record. Run 1, Event 33946, LumiSection 345 at 07-Sep-2016 19:22:27.282 CDT
+got tau
+tau vis pt: 16.1835 genEta: -2.07048 genPhi: 1.60394
+found matched track pt: 16.8669
+Begin processing the 327th record. Run 1, Event 33947, LumiSection 345 at 07-Sep-2016 19:22:29.934 CDT
+got tau
+tau vis pt: 1.55509 genEta: 0.803964 genPhi: -0.285423
+found matched track pt: 2.89592
+Begin processing the 328th record. Run 1, Event 33948, LumiSection 345 at 07-Sep-2016 19:22:32.856 CDT
+got tau
+tau vis pt: 16.6027 genEta: 1.25338 genPhi: -3.07206
+found matched track pt: 8.48793
+Begin processing the 329th record. Run 1, Event 33949, LumiSection 345 at 07-Sep-2016 19:22:36.068 CDT
+got tau
+tau vis pt: 57.2432 genEta: -2.88845 genPhi: -1.5378
+Begin processing the 330th record. Run 1, Event 33950, LumiSection 345 at 07-Sep-2016 19:22:39.569 CDT
+got tau
+tau vis pt: 2.25488 genEta: 1.0935 genPhi: -1.98017
+found matched track pt: 2.38954
+Begin processing the 331st record. Run 1, Event 33951, LumiSection 345 at 07-Sep-2016 19:22:42.091 CDT
+got tau
+tau vis pt: 76.496 genEta: -1.65182 genPhi: 0.879325
+found matched track pt: 37.7649
+Begin processing the 332nd record. Run 1, Event 33952, LumiSection 345 at 07-Sep-2016 19:22:46.558 CDT
+got tau
+tau vis pt: 23.7419 genEta: -1.88463 genPhi: 1.05652
+found matched track pt: 93.226
+Begin processing the 333rd record. Run 1, Event 33953, LumiSection 345 at 07-Sep-2016 19:22:50.043 CDT
+got tau
+tau vis pt: 87.3394 genEta: 2.97073 genPhi: -1.97383
+Begin processing the 334th record. Run 1, Event 33954, LumiSection 345 at 07-Sep-2016 19:22:52.319 CDT
+got tau
+tau vis pt: 60.9195 genEta: 2.44811 genPhi: -1.1355
+found matched track pt: 47.0367
+Begin processing the 335th record. Run 1, Event 33955, LumiSection 345 at 07-Sep-2016 19:22:54.503 CDT
+got tau
+tau vis pt: 83.5175 genEta: 0.339731 genPhi: 0.166036
+found matched track pt: 25.5057
+Begin processing the 336th record. Run 1, Event 33956, LumiSection 345 at 07-Sep-2016 19:22:57.320 CDT
+got tau
+tau vis pt: 17.1498 genEta: -1.56152 genPhi: 1.78508
+found matched track pt: 46.2679
+Begin processing the 337th record. Run 1, Event 33957, LumiSection 345 at 07-Sep-2016 19:23:00.872 CDT
+got tau
+tau vis pt: 60.2136 genEta: -1.5989 genPhi: -2.88427
+found matched track pt: 27.607
+Begin processing the 338th record. Run 1, Event 33958, LumiSection 345 at 07-Sep-2016 19:23:03.719 CDT
+got tau
+tau vis pt: 64.4666 genEta: 0.167028 genPhi: 1.30786
+found matched track pt: 26.5699
+Begin processing the 339th record. Run 1, Event 33959, LumiSection 345 at 07-Sep-2016 19:23:06.225 CDT
+got tau
+tau vis pt: 31.4136 genEta: -2.1666 genPhi: 0.782858
+found matched track pt: 27.9448
+Begin processing the 340th record. Run 1, Event 33960, LumiSection 345 at 07-Sep-2016 19:23:08.693 CDT
+got tau
+tau vis pt: 30.3377 genEta: -0.131334 genPhi: -0.869
+found matched track pt: 22.2402
+Begin processing the 341st record. Run 1, Event 33961, LumiSection 345 at 07-Sep-2016 19:23:11.821 CDT
+got tau
+tau vis pt: 8.08957 genEta: 2.0419 genPhi: -1.51962
+found matched track pt: 8.27545
+Begin processing the 342nd record. Run 1, Event 33962, LumiSection 345 at 07-Sep-2016 19:23:15.471 CDT
+got tau
+tau vis pt: 28.7925 genEta: -1.01858 genPhi: 2.47161
+found matched track pt: 3.50312
+Begin processing the 343rd record. Run 1, Event 33963, LumiSection 345 at 07-Sep-2016 19:23:18.431 CDT
+got tau
+tau vis pt: 35.2952 genEta: -2.16028 genPhi: -2.2962
+found matched track pt: 8.6858
+Begin processing the 344th record. Run 1, Event 33964, LumiSection 345 at 07-Sep-2016 19:23:22.791 CDT
+got tau
+tau vis pt: 10.3789 genEta: -0.201239 genPhi: 1.98367
+found matched track pt: 19.1752
+Begin processing the 345th record. Run 1, Event 33965, LumiSection 345 at 07-Sep-2016 19:23:26.225 CDT
+got tau
+tau vis pt: 25.5183 genEta: -1.24168 genPhi: -3.03489
+found matched track pt: 25.9003
+Begin processing the 346th record. Run 1, Event 33966, LumiSection 345 at 07-Sep-2016 19:23:31.543 CDT
+got tau
+tau vis pt: 8.36793 genEta: 2.047 genPhi: -2.87041
+found matched track pt: 8.42908
+Begin processing the 347th record. Run 1, Event 33967, LumiSection 345 at 07-Sep-2016 19:23:34.974 CDT
+got tau
+tau vis pt: 47.1189 genEta: 1.13544 genPhi: -2.33601
+found matched track pt: 19.4041
+Begin processing the 348th record. Run 1, Event 33968, LumiSection 345 at 07-Sep-2016 19:23:38.386 CDT
+got tau
+tau vis pt: 30.1874 genEta: -1.11849 genPhi: 2.27509
+found matched track pt: 12.3486
+Begin processing the 349th record. Run 1, Event 33969, LumiSection 345 at 07-Sep-2016 19:23:40.761 CDT
+got tau
+tau vis pt: 50.2092 genEta: -0.55787 genPhi: -2.87418
+found matched track pt: 19.2848
+Begin processing the 350th record. Run 1, Event 33970, LumiSection 345 at 07-Sep-2016 19:23:43.748 CDT
+got tau
+tau vis pt: 65.1129 genEta: 1.8909 genPhi: 1.20348
+found matched track pt: 59.8577
+Begin processing the 351st record. Run 1, Event 33971, LumiSection 345 at 07-Sep-2016 19:23:46.108 CDT
+got tau
+tau vis pt: 30.6829 genEta: -1.66124 genPhi: 1.24443
+found matched track pt: 17.0456
+Begin processing the 352nd record. Run 1, Event 33972, LumiSection 345 at 07-Sep-2016 19:23:48.852 CDT
+got tau
+tau vis pt: 19.8689 genEta: -2.57238 genPhi: 0.111517
+found matched track pt: 20.1173
+Begin processing the 353rd record. Run 1, Event 33973, LumiSection 345 at 07-Sep-2016 19:23:52.306 CDT
+got tau
+tau vis pt: 29.8255 genEta: -1.89272 genPhi: 0.474615
+found matched track pt: 382.029
+Begin processing the 354th record. Run 1, Event 33974, LumiSection 345 at 07-Sep-2016 19:23:55.572 CDT
+got tau
+tau vis pt: 43.908 genEta: -0.645306 genPhi: 2.33279
+found matched track pt: 44.4937
+Begin processing the 355th record. Run 1, Event 33975, LumiSection 345 at 07-Sep-2016 19:23:58.451 CDT
+got tau
+tau vis pt: 42.0577 genEta: -0.862429 genPhi: -0.561459
+found matched track pt: 42.3913
+Begin processing the 356th record. Run 1, Event 33976, LumiSection 345 at 07-Sep-2016 19:24:01.491 CDT
+got tau
+tau vis pt: 84.5472 genEta: -2.22267 genPhi: -0.746711
+found matched track pt: 44.4202
+Begin processing the 357th record. Run 1, Event 33977, LumiSection 345 at 07-Sep-2016 19:24:05.345 CDT
+got tau
+tau vis pt: 50.7066 genEta: -0.218598 genPhi: -1.86215
+found matched track pt: 22.3782
+Begin processing the 358th record. Run 1, Event 33978, LumiSection 345 at 07-Sep-2016 19:24:07.627 CDT
+got tau
+tau vis pt: 18.5375 genEta: 0.128516 genPhi: -2.3947
+found matched track pt: 57.9277
+Begin processing the 359th record. Run 1, Event 33979, LumiSection 345 at 07-Sep-2016 19:24:12.729 CDT
+got tau
+tau vis pt: 49.6148 genEta: -0.0697291 genPhi: -1.08363
+found matched track pt: 47.1044
+Begin processing the 360th record. Run 1, Event 33980, LumiSection 345 at 07-Sep-2016 19:24:14.703 CDT
+got tau
+tau vis pt: 21.3649 genEta: 1.339 genPhi: -0.422633
+found matched track pt: 20.7819
+Begin processing the 361st record. Run 1, Event 33981, LumiSection 345 at 07-Sep-2016 19:24:19.042 CDT
+got tau
+tau vis pt: 88.8723 genEta: -2.77829 genPhi: 3.10976
+Begin processing the 362nd record. Run 1, Event 33982, LumiSection 345 at 07-Sep-2016 19:24:21.933 CDT
+got tau
+tau vis pt: 43.3934 genEta: -2.01237 genPhi: 0.318545
+found matched track pt: 34.3664
+Begin processing the 363rd record. Run 1, Event 33983, LumiSection 345 at 07-Sep-2016 19:24:25.376 CDT
+got tau
+tau vis pt: 67.4179 genEta: 1.98859 genPhi: 1.12819
+found matched track pt: 41.086
+Begin processing the 364th record. Run 1, Event 33984, LumiSection 345 at 07-Sep-2016 19:24:29.351 CDT
+got tau
+tau vis pt: 52.3348 genEta: -0.886288 genPhi: 1.13236
+found matched track pt: 52.2412
+Begin processing the 365th record. Run 1, Event 33985, LumiSection 345 at 07-Sep-2016 19:24:32.992 CDT
+got tau
+tau vis pt: 73.7978 genEta: 0.743164 genPhi: 1.83256
+found matched track pt: 239.108
+Begin processing the 366th record. Run 1, Event 33986, LumiSection 345 at 07-Sep-2016 19:24:35.598 CDT
+got tau
+tau vis pt: 77.2101 genEta: 0.98947 genPhi: -1.52411
+found matched track pt: 56.806
+Begin processing the 367th record. Run 1, Event 33987, LumiSection 345 at 07-Sep-2016 19:24:37.905 CDT
+got tau
+tau vis pt: 73.7544 genEta: 2.22733 genPhi: -0.566483
+found matched track pt: 21.3154
+Begin processing the 368th record. Run 1, Event 33988, LumiSection 345 at 07-Sep-2016 19:24:40.900 CDT
+got tau
+tau vis pt: 26.3803 genEta: 2.91197 genPhi: 1.88432
+Begin processing the 369th record. Run 1, Event 33989, LumiSection 345 at 07-Sep-2016 19:24:45.058 CDT
+got tau
+tau vis pt: 8.4479 genEta: -0.680804 genPhi: -2.12738
+found matched track pt: 7.74556
+Begin processing the 370th record. Run 1, Event 33990, LumiSection 345 at 07-Sep-2016 19:24:47.649 CDT
+got tau
+tau vis pt: 30.6551 genEta: -1.72952 genPhi: 0.969654
+found matched track pt: 14.7159
+Begin processing the 371st record. Run 1, Event 33991, LumiSection 345 at 07-Sep-2016 19:24:50.791 CDT
+got tau
+tau vis pt: 9.47631 genEta: 1.72755 genPhi: -1.96381
+found matched track pt: 34.0893
+Begin processing the 372nd record. Run 1, Event 33992, LumiSection 345 at 07-Sep-2016 19:24:54.219 CDT
+got tau
+tau vis pt: 75.4227 genEta: 1.39152 genPhi: -1.35116
+found matched track pt: 18.2261
+Begin processing the 373rd record. Run 1, Event 33993, LumiSection 345 at 07-Sep-2016 19:24:59.237 CDT
+got tau
+tau vis pt: 57.5533 genEta: -1.10413 genPhi: -0.945832
+found matched track pt: 11.0607
+Begin processing the 374th record. Run 1, Event 33994, LumiSection 345 at 07-Sep-2016 19:25:01.976 CDT
+got tau
+tau vis pt: 8.67564 genEta: -1.43484 genPhi: 1.72406
+found matched track pt: 8.88395
+Begin processing the 375th record. Run 1, Event 33995, LumiSection 345 at 07-Sep-2016 19:25:05.927 CDT
+got tau
+tau vis pt: 25.4669 genEta: -0.289353 genPhi: -0.603055
+found matched track pt: 15.2881
+Begin processing the 376th record. Run 1, Event 33996, LumiSection 345 at 07-Sep-2016 19:25:09.320 CDT
+got tau
+tau vis pt: 80.9972 genEta: -2.93885 genPhi: 0.671816
+Begin processing the 377th record. Run 1, Event 33997, LumiSection 345 at 07-Sep-2016 19:25:12.175 CDT
+got tau
+tau vis pt: 26.378 genEta: -0.769576 genPhi: -1.80891
+found matched track pt: 11.4064
+Begin processing the 378th record. Run 1, Event 33998, LumiSection 345 at 07-Sep-2016 19:25:15.251 CDT
+got tau
+tau vis pt: 3.802 genEta: 0.815251 genPhi: -0.653223
+found matched track pt: 6.02481
+Begin processing the 379th record. Run 1, Event 33999, LumiSection 345 at 07-Sep-2016 19:25:18.264 CDT
+got tau
+tau vis pt: 4.80844 genEta: 2.00176 genPhi: 0.650052
+found matched track pt: 4.89144
+Begin processing the 380th record. Run 1, Event 34000, LumiSection 345 at 07-Sep-2016 19:25:21.631 CDT
+got tau
+tau vis pt: 20.8811 genEta: 0.252962 genPhi: -0.0650141
+found matched track pt: 4.44367
+Begin processing the 381st record. Run 1, Event 34001, LumiSection 345 at 07-Sep-2016 19:25:26.319 CDT
+got tau
+tau vis pt: 2.25598 genEta: 2.23797 genPhi: 1.71703
+found matched track pt: 3.68345
+Begin processing the 382nd record. Run 1, Event 34002, LumiSection 345 at 07-Sep-2016 19:25:29.614 CDT
+got tau
+tau vis pt: 70.9525 genEta: 2.54589 genPhi: 1.59965
+found matched track pt: 3.91648
+Begin processing the 383rd record. Run 1, Event 34003, LumiSection 345 at 07-Sep-2016 19:25:32.231 CDT
+got tau
+tau vis pt: 73.119 genEta: 2.70951 genPhi: -0.768658
+found matched track pt: 3.0052
+Begin processing the 384th record. Run 1, Event 34004, LumiSection 345 at 07-Sep-2016 19:25:36.591 CDT
+got tau
+tau vis pt: 35.1458 genEta: -2.64568 genPhi: 0.362536
+Begin processing the 385th record. Run 1, Event 34005, LumiSection 345 at 07-Sep-2016 19:25:38.759 CDT
+got tau
+tau vis pt: 17.3311 genEta: 2.86524 genPhi: 1.81042
+Begin processing the 386th record. Run 1, Event 34006, LumiSection 345 at 07-Sep-2016 19:25:41.774 CDT
+got tau
+tau vis pt: 31.0467 genEta: 2.64508 genPhi: -0.847852
+Begin processing the 387th record. Run 1, Event 34007, LumiSection 345 at 07-Sep-2016 19:25:45.370 CDT
+got tau
+tau vis pt: 25.8958 genEta: -2.67681 genPhi: 1.74206
+found matched track pt: 4.43677
+Begin processing the 388th record. Run 1, Event 34008, LumiSection 345 at 07-Sep-2016 19:25:47.633 CDT
+got tau
+tau vis pt: 9.08936 genEta: 1.96054 genPhi: 0.332496
+found matched track pt: 6.01628
+Begin processing the 389th record. Run 1, Event 34009, LumiSection 345 at 07-Sep-2016 19:25:50.395 CDT
+got tau
+tau vis pt: 88.6957 genEta: 0.489011 genPhi: -2.2371
+found matched track pt: 21.7667
+Begin processing the 390th record. Run 1, Event 34010, LumiSection 345 at 07-Sep-2016 19:25:54.169 CDT
+got tau
+tau vis pt: 18.5751 genEta: -0.930684 genPhi: 0.359709
+found matched track pt: 5.71356
+Begin processing the 391st record. Run 1, Event 34011, LumiSection 345 at 07-Sep-2016 19:25:57.293 CDT
+got tau
+tau vis pt: 12.1789 genEta: -3.0119 genPhi: -0.999075
+Begin processing the 392nd record. Run 1, Event 34012, LumiSection 345 at 07-Sep-2016 19:26:00.729 CDT
+got tau
+tau vis pt: 21.255 genEta: 0.705143 genPhi: 2.64942
+found matched track pt: 6.32221
+Begin processing the 393rd record. Run 1, Event 34013, LumiSection 345 at 07-Sep-2016 19:26:03.570 CDT
+got tau
+tau vis pt: 22.9264 genEta: -1.70427 genPhi: 1.21189
+found matched track pt: 5.27712
+Begin processing the 394th record. Run 1, Event 34014, LumiSection 345 at 07-Sep-2016 19:26:07.333 CDT
+got tau
+tau vis pt: 2.79281 genEta: 0.885629 genPhi: -1.58228
+found matched track pt: 21.7327
+Begin processing the 395th record. Run 1, Event 34015, LumiSection 345 at 07-Sep-2016 19:26:10.701 CDT
+got tau
+tau vis pt: 4.26205 genEta: 2.60936 genPhi: -2.8259
+Begin processing the 396th record. Run 1, Event 34016, LumiSection 345 at 07-Sep-2016 19:26:13.481 CDT
+got tau
+tau vis pt: 81.6395 genEta: 1.57131 genPhi: -0.345172
+found matched track pt: 82.3195
+Begin processing the 397th record. Run 1, Event 34017, LumiSection 345 at 07-Sep-2016 19:26:16.394 CDT
+got tau
+tau vis pt: 28.3786 genEta: 2.92647 genPhi: -3.1216
+Begin processing the 398th record. Run 1, Event 34018, LumiSection 345 at 07-Sep-2016 19:26:18.385 CDT
+got tau
+tau vis pt: 9.94732 genEta: 2.60638 genPhi: -1.40505
+found matched track pt: 3.9231
+Begin processing the 399th record. Run 1, Event 34019, LumiSection 345 at 07-Sep-2016 19:26:21.422 CDT
+got tau
+tau vis pt: 65.1154 genEta: -2.451 genPhi: 2.16899
+found matched track pt: 22.2229
+Begin processing the 400th record. Run 1, Event 34020, LumiSection 345 at 07-Sep-2016 19:26:24.735 CDT
+got tau
+tau vis pt: 44.4329 genEta: -1.64128 genPhi: -2.18393
+found matched track pt: 27.928
+Begin processing the 401st record. Run 1, Event 47181, LumiSection 480 at 07-Sep-2016 19:26:27.537 CDT
+got tau
+tau vis pt: 72.8971 genEta: 1.66196 genPhi: -2.19168
+found matched track pt: 36.1238
+Begin processing the 402nd record. Run 1, Event 47182, LumiSection 480 at 07-Sep-2016 19:26:31.295 CDT
+got tau
+tau vis pt: 22.3337 genEta: 1.49351 genPhi: -2.03264
+found matched track pt: 19.377
+Begin processing the 403rd record. Run 1, Event 47183, LumiSection 480 at 07-Sep-2016 19:26:34.251 CDT
+got tau
+tau vis pt: 45.5906 genEta: -1.33677 genPhi: -2.76961
+found matched track pt: 16.6699
+Begin processing the 404th record. Run 1, Event 47184, LumiSection 480 at 07-Sep-2016 19:26:37.616 CDT
+got tau
+tau vis pt: 32.8344 genEta: 1.47691 genPhi: -0.385708
+found matched track pt: 12.6254
+Begin processing the 405th record. Run 1, Event 47185, LumiSection 480 at 07-Sep-2016 19:26:40.278 CDT
+got tau
+tau vis pt: 55.3692 genEta: 2.32387 genPhi: -0.782736
+found matched track pt: 17.102
+Begin processing the 406th record. Run 1, Event 47186, LumiSection 480 at 07-Sep-2016 19:26:44.563 CDT
+got tau
+tau vis pt: 1.59629 genEta: 1.62447 genPhi: 2.47701
+found matched track pt: 3.87592
+Begin processing the 407th record. Run 1, Event 47187, LumiSection 480 at 07-Sep-2016 19:26:48.306 CDT
+got tau
+tau vis pt: 23.5937 genEta: -0.972121 genPhi: 2.32427
+found matched track pt: 14.8774
+Begin processing the 408th record. Run 1, Event 47188, LumiSection 480 at 07-Sep-2016 19:26:51.616 CDT
+got tau
+tau vis pt: 25.3549 genEta: -1.6106 genPhi: -0.264843
+found matched track pt: 25.5982
+Begin processing the 409th record. Run 1, Event 47189, LumiSection 480 at 07-Sep-2016 19:26:54.607 CDT
+got tau
+tau vis pt: 42.4963 genEta: 1.84479 genPhi: 0.501732
+found matched track pt: 42.6772
+Begin processing the 410th record. Run 1, Event 47190, LumiSection 480 at 07-Sep-2016 19:26:57.840 CDT
+got tau
+tau vis pt: 18.1149 genEta: 1.59693 genPhi: -1.73154
+found matched track pt: 16.2261
+Begin processing the 411th record. Run 1, Event 47191, LumiSection 480 at 07-Sep-2016 19:27:00.487 CDT
+got tau
+tau vis pt: 22.5697 genEta: -2.61192 genPhi: -1.0697
+Begin processing the 412th record. Run 1, Event 47192, LumiSection 480 at 07-Sep-2016 19:27:03.821 CDT
+got tau
+tau vis pt: 3.52549 genEta: 0.335208 genPhi: -2.68864
+found matched track pt: 3.39261
+Begin processing the 413th record. Run 1, Event 47193, LumiSection 480 at 07-Sep-2016 19:27:07.771 CDT
+got tau
+tau vis pt: 72.8447 genEta: -0.754544 genPhi: -0.660209
+found matched track pt: 89.3505
+Begin processing the 414th record. Run 1, Event 47194, LumiSection 480 at 07-Sep-2016 19:27:10.643 CDT
+got tau
+tau vis pt: 49.8859 genEta: -0.790978 genPhi: -1.09205
+found matched track pt: 47.001
+Begin processing the 415th record. Run 1, Event 47195, LumiSection 480 at 07-Sep-2016 19:27:13.274 CDT
+got tau
+tau vis pt: 27.4275 genEta: 2.01594 genPhi: -1.46416
+found matched track pt: 8.47434
+Begin processing the 416th record. Run 1, Event 47196, LumiSection 480 at 07-Sep-2016 19:27:17.376 CDT
+got tau
+tau vis pt: 16.8987 genEta: -1.34664 genPhi: -2.18313
+found matched track pt: 15.3281
+Begin processing the 417th record. Run 1, Event 47197, LumiSection 480 at 07-Sep-2016 19:27:20.835 CDT
+got tau
+tau vis pt: 24.6131 genEta: -3.00032 genPhi: -0.945797
+found matched track pt: 2.42039
+Begin processing the 418th record. Run 1, Event 47198, LumiSection 480 at 07-Sep-2016 19:27:24.485 CDT
+got tau
+tau vis pt: 45.9561 genEta: -1.90029 genPhi: -2.33237
+found matched track pt: 10.541
+Begin processing the 419th record. Run 1, Event 47199, LumiSection 480 at 07-Sep-2016 19:27:29.081 CDT
+got tau
+tau vis pt: 14.1473 genEta: 1.82609 genPhi: -0.993924
+found matched track pt: 7.82736
+Begin processing the 420th record. Run 1, Event 47200, LumiSection 480 at 07-Sep-2016 19:27:32.785 CDT
+got tau
+tau vis pt: 21.081 genEta: -0.923971 genPhi: 2.92482
+found matched track pt: 13.4876
+Begin processing the 421st record. Run 1, Event 47201, LumiSection 480 at 07-Sep-2016 19:27:37.451 CDT
+got tau
+tau vis pt: 8.05543 genEta: 1.11161 genPhi: -2.43855
+found matched track pt: 7.05538
+Begin processing the 422nd record. Run 1, Event 47202, LumiSection 480 at 07-Sep-2016 19:27:39.869 CDT
+got tau
+tau vis pt: 23.3093 genEta: 2.12236 genPhi: 0.0466642
+found matched track pt: 22.7888
+Begin processing the 423rd record. Run 1, Event 47203, LumiSection 480 at 07-Sep-2016 19:27:44.416 CDT
+got tau
+tau vis pt: 36.2508 genEta: -2.67252 genPhi: 1.79739
+found matched track pt: 2.11616
+Begin processing the 424th record. Run 1, Event 47204, LumiSection 480 at 07-Sep-2016 19:27:46.787 CDT
+got tau
+tau vis pt: 30.4784 genEta: 0.967413 genPhi: 2.83548
+found matched track pt: 63.9747
+Begin processing the 425th record. Run 1, Event 47205, LumiSection 480 at 07-Sep-2016 19:27:48.993 CDT
+got tau
+tau vis pt: 23.2058 genEta: -2.79553 genPhi: -2.61008
+Begin processing the 426th record. Run 1, Event 47206, LumiSection 480 at 07-Sep-2016 19:27:51.755 CDT
+got tau
+tau vis pt: 15.4808 genEta: 2.94142 genPhi: 2.52888
+Begin processing the 427th record. Run 1, Event 47207, LumiSection 480 at 07-Sep-2016 19:27:54.949 CDT
+got tau
+tau vis pt: 76.3891 genEta: 0.212179 genPhi: -0.0426756
+found matched track pt: 45.7099
+Begin processing the 428th record. Run 1, Event 47208, LumiSection 480 at 07-Sep-2016 19:27:59.407 CDT
+got tau
+tau vis pt: 29.8191 genEta: -2.31099 genPhi: -2.66398
+found matched track pt: 23.1591
+Begin processing the 429th record. Run 1, Event 47209, LumiSection 480 at 07-Sep-2016 19:28:02.150 CDT
+got tau
+tau vis pt: 5.68029 genEta: -2.25826 genPhi: -2.11315
+found matched track pt: 11.3396
+Begin processing the 430th record. Run 1, Event 47210, LumiSection 480 at 07-Sep-2016 19:28:05.491 CDT
+got tau
+tau vis pt: 60.3171 genEta: -2.26868 genPhi: 0.932967
+found matched track pt: 61.0126
+Begin processing the 431st record. Run 1, Event 47211, LumiSection 480 at 07-Sep-2016 19:28:09.107 CDT
+got tau
+tau vis pt: 18.5967 genEta: 2.98845 genPhi: -1.72431
+Begin processing the 432nd record. Run 1, Event 47212, LumiSection 480 at 07-Sep-2016 19:28:12.180 CDT
+got tau
+tau vis pt: 61.7735 genEta: -2.76719 genPhi: -2.16154
+Begin processing the 433rd record. Run 1, Event 47213, LumiSection 480 at 07-Sep-2016 19:28:15.457 CDT
+got tau
+tau vis pt: 71.9147 genEta: -1.62717 genPhi: -1.69181
+found matched track pt: 39.4006
+Begin processing the 434th record. Run 1, Event 47214, LumiSection 480 at 07-Sep-2016 19:28:17.948 CDT
+got tau
+tau vis pt: 59.8488 genEta: -0.667251 genPhi: -0.989618
+found matched track pt: 12.0435
+Begin processing the 435th record. Run 1, Event 47215, LumiSection 480 at 07-Sep-2016 19:28:21.612 CDT
+got tau
+tau vis pt: 28.6983 genEta: 1.69429 genPhi: 0.389597
+found matched track pt: 8.60994
+Begin processing the 436th record. Run 1, Event 47216, LumiSection 480 at 07-Sep-2016 19:28:25.507 CDT
+got tau
+tau vis pt: 41.7946 genEta: 2.52703 genPhi: 1.69862
+found matched track pt: 2.49638
+Begin processing the 437th record. Run 1, Event 47217, LumiSection 480 at 07-Sep-2016 19:28:28.042 CDT
+got tau
+tau vis pt: 1.69597 genEta: -2.26327 genPhi: 1.26992
+found matched track pt: 2.24569
+Begin processing the 438th record. Run 1, Event 47218, LumiSection 480 at 07-Sep-2016 19:28:30.792 CDT
+got tau
+tau vis pt: 78.7161 genEta: 0.00789142 genPhi: -1.79758
+found matched track pt: 53.9856
+Begin processing the 439th record. Run 1, Event 47219, LumiSection 480 at 07-Sep-2016 19:28:32.687 CDT
+got tau
+tau vis pt: 29.5732 genEta: 0.585252 genPhi: 1.93414
+found matched track pt: 67.3119
+Begin processing the 440th record. Run 1, Event 47220, LumiSection 480 at 07-Sep-2016 19:28:36.008 CDT
+got tau
+tau vis pt: 49.2787 genEta: 2.28015 genPhi: -2.78863
+found matched track pt: 13.9985
+Begin processing the 441st record. Run 1, Event 47221, LumiSection 480 at 07-Sep-2016 19:28:38.825 CDT
+got tau
+tau vis pt: 55.2484 genEta: -0.478721 genPhi: 3.11858
+found matched track pt: 45.9517
+Begin processing the 442nd record. Run 1, Event 47222, LumiSection 480 at 07-Sep-2016 19:28:41.770 CDT
+got tau
+tau vis pt: 59.7862 genEta: -0.898538 genPhi: -2.17634
+found matched track pt: 19.2956
+Begin processing the 443rd record. Run 1, Event 47223, LumiSection 480 at 07-Sep-2016 19:28:44.798 CDT
+got tau
+tau vis pt: 37.7013 genEta: -2.0524 genPhi: 2.72137
+found matched track pt: 37.6751
+Begin processing the 444th record. Run 1, Event 47224, LumiSection 480 at 07-Sep-2016 19:28:47.646 CDT
+got tau
+tau vis pt: 18.9203 genEta: -0.783836 genPhi: -2.43946
+found matched track pt: 14.2168
+Begin processing the 445th record. Run 1, Event 47225, LumiSection 480 at 07-Sep-2016 19:28:50.803 CDT
+got tau
+tau vis pt: 17.8578 genEta: 2.58576 genPhi: 1.2082
+found matched track pt: 2.35647
+Begin processing the 446th record. Run 1, Event 47226, LumiSection 480 at 07-Sep-2016 19:28:54.346 CDT
+got tau
+tau vis pt: 42.4571 genEta: 1.26778 genPhi: 0.653628
+found matched track pt: 5.0933
+Begin processing the 447th record. Run 1, Event 47227, LumiSection 480 at 07-Sep-2016 19:28:58.044 CDT
+got tau
+tau vis pt: 17.2383 genEta: -0.808416 genPhi: -2.3946
+found matched track pt: 10.566
+Begin processing the 448th record. Run 1, Event 47228, LumiSection 480 at 07-Sep-2016 19:29:01.549 CDT
+got tau
+tau vis pt: 43.957 genEta: -0.918 genPhi: 1.75074
+found matched track pt: 42.7218
+Begin processing the 449th record. Run 1, Event 47229, LumiSection 480 at 07-Sep-2016 19:29:04.881 CDT
+got tau
+tau vis pt: 64.0382 genEta: -1.85789 genPhi: -0.970687
+found matched track pt: 10.6566
+Begin processing the 450th record. Run 1, Event 47230, LumiSection 480 at 07-Sep-2016 19:29:07.513 CDT
+got tau
+tau vis pt: 16.7944 genEta: 0.534385 genPhi: 1.5328
+found matched track pt: 6.00591
+Begin processing the 451st record. Run 1, Event 47231, LumiSection 480 at 07-Sep-2016 19:29:11.030 CDT
+got tau
+tau vis pt: 63.663 genEta: 1.9982 genPhi: -0.056992
+found matched track pt: 5.97777
+Begin processing the 452nd record. Run 1, Event 47232, LumiSection 480 at 07-Sep-2016 19:29:14.353 CDT
+got tau
+tau vis pt: 33.6825 genEta: 1.23625 genPhi: 2.39995
+found matched track pt: 29.3643
+Begin processing the 453rd record. Run 1, Event 47233, LumiSection 480 at 07-Sep-2016 19:29:17.786 CDT
+got tau
+tau vis pt: 50.4156 genEta: -0.778766 genPhi: 1.46026
+found matched track pt: 7.07196
+Begin processing the 454th record. Run 1, Event 47234, LumiSection 480 at 07-Sep-2016 19:29:20.179 CDT
+got tau
+tau vis pt: 18.4318 genEta: -2.23704 genPhi: 2.67063
+found matched track pt: 18.1664
+Begin processing the 455th record. Run 1, Event 47235, LumiSection 480 at 07-Sep-2016 19:29:21.576 CDT
+got tau
+tau vis pt: 30.3667 genEta: -0.816002 genPhi: -0.788368
+found matched track pt: 22.6662
+Begin processing the 456th record. Run 1, Event 47236, LumiSection 480 at 07-Sep-2016 19:29:24.420 CDT
+got tau
+tau vis pt: 86.9834 genEta: -2.08502 genPhi: 0.421562
+found matched track pt: 35.4168
+Begin processing the 457th record. Run 1, Event 47237, LumiSection 480 at 07-Sep-2016 19:29:27.741 CDT
+got tau
+tau vis pt: 10.0367 genEta: 0.835022 genPhi: 2.15031
+found matched track pt: 10.089
+Begin processing the 458th record. Run 1, Event 47238, LumiSection 480 at 07-Sep-2016 19:29:29.918 CDT
+got tau
+tau vis pt: 13.4418 genEta: -0.726666 genPhi: 1.15047
+found matched track pt: 8.51085
+Begin processing the 459th record. Run 1, Event 47239, LumiSection 480 at 07-Sep-2016 19:29:33.138 CDT
+got tau
+tau vis pt: 52.6715 genEta: -1.64859 genPhi: 2.84965
+found matched track pt: 18.359
+Begin processing the 460th record. Run 1, Event 47240, LumiSection 480 at 07-Sep-2016 19:29:36.793 CDT
+got tau
+tau vis pt: 31.8911 genEta: -0.368697 genPhi: 0.521296
+found matched track pt: 7.74188
+Begin processing the 461st record. Run 1, Event 47241, LumiSection 480 at 07-Sep-2016 19:29:40.145 CDT
+got tau
+tau vis pt: 40.9562 genEta: -0.665725 genPhi: -1.03648
+found matched track pt: 54.3411
+Begin processing the 462nd record. Run 1, Event 47242, LumiSection 480 at 07-Sep-2016 19:29:42.929 CDT
+got tau
+tau vis pt: 15.4379 genEta: 0.127458 genPhi: 1.03957
+found matched track pt: 3.75158
+Begin processing the 463rd record. Run 1, Event 47243, LumiSection 480 at 07-Sep-2016 19:29:46.471 CDT
+got tau
+tau vis pt: 27.3764 genEta: 1.26171 genPhi: 2.43114
+found matched track pt: 13.6042
+Begin processing the 464th record. Run 1, Event 47244, LumiSection 480 at 07-Sep-2016 19:29:49.760 CDT
+got tau
+tau vis pt: 48.8413 genEta: 2.10628 genPhi: 0.641652
+found matched track pt: 68.9679
+Begin processing the 465th record. Run 1, Event 47245, LumiSection 480 at 07-Sep-2016 19:29:53.400 CDT
+got tau
+tau vis pt: 66.1909 genEta: 1.53706 genPhi: 2.64033
+found matched track pt: 61.1953
+Begin processing the 466th record. Run 1, Event 47246, LumiSection 480 at 07-Sep-2016 19:29:56.559 CDT
+got tau
+tau vis pt: 37.2934 genEta: -2.94967 genPhi: 1.40858
+Begin processing the 467th record. Run 1, Event 47247, LumiSection 480 at 07-Sep-2016 19:29:59.200 CDT
+got tau
+tau vis pt: 11.6779 genEta: -2.3267 genPhi: 0.846463
+found matched track pt: 6.12912
+Begin processing the 468th record. Run 1, Event 47248, LumiSection 480 at 07-Sep-2016 19:30:01.641 CDT
+got tau
+tau vis pt: 57.2504 genEta: 2.56371 genPhi: -1.80707
+found matched track pt: 2.75708
+Begin processing the 469th record. Run 1, Event 47249, LumiSection 480 at 07-Sep-2016 19:30:05.348 CDT
+got tau
+tau vis pt: 27.0697 genEta: 2.43008 genPhi: 0.822868
+found matched track pt: 5.30728
+Begin processing the 470th record. Run 1, Event 47250, LumiSection 480 at 07-Sep-2016 19:30:07.120 CDT
+got tau
+tau vis pt: 62.1278 genEta: 2.95578 genPhi: 1.52419
+Begin processing the 471st record. Run 1, Event 47251, LumiSection 480 at 07-Sep-2016 19:30:10.641 CDT
+got tau
+tau vis pt: 47.5366 genEta: -1.58863 genPhi: 1.60066
+found matched track pt: 31.0991
+Begin processing the 472nd record. Run 1, Event 47252, LumiSection 480 at 07-Sep-2016 19:30:14.374 CDT
+got tau
+tau vis pt: 82.2247 genEta: -0.828539 genPhi: 0.667609
+found matched track pt: 78.811
+Begin processing the 473rd record. Run 1, Event 47253, LumiSection 480 at 07-Sep-2016 19:30:16.946 CDT
+got tau
+tau vis pt: 22.6337 genEta: -2.99285 genPhi: 1.95885
+Begin processing the 474th record. Run 1, Event 47254, LumiSection 480 at 07-Sep-2016 19:30:19.708 CDT
+got tau
+tau vis pt: 79.4058 genEta: 2.05932 genPhi: -2.49119
+found matched track pt: 77.6054
+Begin processing the 475th record. Run 1, Event 47255, LumiSection 480 at 07-Sep-2016 19:30:23.207 CDT
+got tau
+tau vis pt: 30.4025 genEta: -2.75284 genPhi: 0.789974
+Begin processing the 476th record. Run 1, Event 47256, LumiSection 480 at 07-Sep-2016 19:30:25.414 CDT
+got tau
+tau vis pt: 12.6122 genEta: -2.29934 genPhi: -1.5626
+found matched track pt: 13.7614
+Begin processing the 477th record. Run 1, Event 47257, LumiSection 480 at 07-Sep-2016 19:30:28.702 CDT
+got tau
+tau vis pt: 1.00602 genEta: 1.16259 genPhi: -2.45894
+found matched track pt: 4.18288
+Begin processing the 478th record. Run 1, Event 47258, LumiSection 480 at 07-Sep-2016 19:30:31.979 CDT
+got tau
+tau vis pt: 34.677 genEta: 2.06244 genPhi: -1.75671
+found matched track pt: 23.0259
+Begin processing the 479th record. Run 1, Event 47259, LumiSection 480 at 07-Sep-2016 19:30:35.292 CDT
+got tau
+tau vis pt: 5.84145 genEta: -0.108773 genPhi: 1.34659
+found matched track pt: 5.92048
+Begin processing the 480th record. Run 1, Event 47260, LumiSection 480 at 07-Sep-2016 19:30:38.082 CDT
+got tau
+tau vis pt: 17.0501 genEta: -1.77588 genPhi: 2.00358
+found matched track pt: 5.00035
+Begin processing the 481st record. Run 1, Event 47261, LumiSection 480 at 07-Sep-2016 19:30:40.821 CDT
+got tau
+tau vis pt: 17.5445 genEta: -0.234797 genPhi: -0.727989
+found matched track pt: 9.26089
+Begin processing the 482nd record. Run 1, Event 47262, LumiSection 480 at 07-Sep-2016 19:30:43.734 CDT
+got tau
+tau vis pt: 20.484 genEta: -1.96818 genPhi: 0.983787
+found matched track pt: 17.638
+Begin processing the 483rd record. Run 1, Event 47263, LumiSection 480 at 07-Sep-2016 19:30:47.448 CDT
+got tau
+tau vis pt: 14.7407 genEta: -0.321596 genPhi: 2.2376
+found matched track pt: 5.29545
+Begin processing the 484th record. Run 1, Event 47264, LumiSection 480 at 07-Sep-2016 19:30:50.000 CDT
+got tau
+tau vis pt: 27.5884 genEta: -1.51577 genPhi: 1.8058
+found matched track pt: 18.9445
+Begin processing the 485th record. Run 1, Event 47265, LumiSection 480 at 07-Sep-2016 19:30:52.714 CDT
+got tau
+tau vis pt: 3.3486 genEta: -2.29898 genPhi: 0.552284
+Begin processing the 486th record. Run 1, Event 47266, LumiSection 480 at 07-Sep-2016 19:30:55.368 CDT
+got tau
+tau vis pt: 14.9138 genEta: -1.34029 genPhi: -2.08177
+found matched track pt: 7.8557
+Begin processing the 487th record. Run 1, Event 47267, LumiSection 480 at 07-Sep-2016 19:30:57.665 CDT
+got tau
+tau vis pt: 68.5509 genEta: -2.05652 genPhi: -1.4918
+found matched track pt: 20.3746
+Begin processing the 488th record. Run 1, Event 47268, LumiSection 480 at 07-Sep-2016 19:30:59.870 CDT
+got tau
+tau vis pt: 34.3351 genEta: 0.881505 genPhi: -1.15923
+found matched track pt: 4.32407
+Begin processing the 489th record. Run 1, Event 47269, LumiSection 480 at 07-Sep-2016 19:31:02.045 CDT
+got tau
+tau vis pt: 16.2707 genEta: -1.34602 genPhi: 3.04445
+found matched track pt: 17.6393
+Begin processing the 490th record. Run 1, Event 47270, LumiSection 480 at 07-Sep-2016 19:31:05.389 CDT
+got tau
+tau vis pt: 12.5375 genEta: -2.34228 genPhi: 0.499599
+found matched track pt: 12.0705
+Begin processing the 491st record. Run 1, Event 47271, LumiSection 480 at 07-Sep-2016 19:31:08.127 CDT
+got tau
+tau vis pt: 47.18 genEta: -0.904161 genPhi: -1.5524
+found matched track pt: 16.0177
+Begin processing the 492nd record. Run 1, Event 47272, LumiSection 480 at 07-Sep-2016 19:31:10.271 CDT
+got tau
+tau vis pt: 7.65483 genEta: 2.46747 genPhi: -1.05107
+found matched track pt: 2.38044
+Begin processing the 493rd record. Run 1, Event 47273, LumiSection 480 at 07-Sep-2016 19:31:13.250 CDT
+got tau
+tau vis pt: 48.119 genEta: 1.98702 genPhi: 2.51634
+found matched track pt: 175.542
+Begin processing the 494th record. Run 1, Event 47274, LumiSection 480 at 07-Sep-2016 19:31:17.233 CDT
+got tau
+tau vis pt: 32.2773 genEta: -0.331058 genPhi: 0.213767
+found matched track pt: 15.3709
+Begin processing the 495th record. Run 1, Event 47275, LumiSection 480 at 07-Sep-2016 19:31:21.408 CDT
+got tau
+tau vis pt: 13.5998 genEta: 1.06839 genPhi: -0.0598763
+found matched track pt: 2.69359
+Begin processing the 496th record. Run 1, Event 47276, LumiSection 480 at 07-Sep-2016 19:31:24.714 CDT
+got tau
+tau vis pt: 37.9147 genEta: 0.160746 genPhi: 1.33443
+found matched track pt: 28.1664
+Begin processing the 497th record. Run 1, Event 47277, LumiSection 480 at 07-Sep-2016 19:31:27.975 CDT
+got tau
+tau vis pt: 15.0733 genEta: 1.97924 genPhi: 1.14708
+found matched track pt: 15.0008
+Begin processing the 498th record. Run 1, Event 47278, LumiSection 480 at 07-Sep-2016 19:31:33.153 CDT
+got tau
+tau vis pt: 3.46522 genEta: -2.9244 genPhi: -2.0494
+Begin processing the 499th record. Run 1, Event 47279, LumiSection 480 at 07-Sep-2016 19:31:35.718 CDT
+got tau
+tau vis pt: 25.7499 genEta: 1.68896 genPhi: 0.368728
+found matched track pt: 210.452
+Begin processing the 500th record. Run 1, Event 47280, LumiSection 480 at 07-Sep-2016 19:31:39.724 CDT
+got tau
+tau vis pt: 15.0661 genEta: 2.34298 genPhi: 1.23731
+found matched track pt: 15.3982
+Begin processing the 501st record. Run 1, Event 49781, LumiSection 506 at 07-Sep-2016 19:31:42.697 CDT
+got tau
+tau vis pt: 21.5838 genEta: 2.32454 genPhi: -2.55012
+found matched track pt: 22.2571
+Begin processing the 502nd record. Run 1, Event 49782, LumiSection 506 at 07-Sep-2016 19:31:45.614 CDT
+got tau
+tau vis pt: 21.104 genEta: 2.12135 genPhi: 3.03021
+found matched track pt: 14.3833
+Begin processing the 503rd record. Run 1, Event 49783, LumiSection 506 at 07-Sep-2016 19:31:47.964 CDT
+got tau
+tau vis pt: 78.8628 genEta: 1.92622 genPhi: -0.22969
+found matched track pt: 82.0704
+Begin processing the 504th record. Run 1, Event 49784, LumiSection 506 at 07-Sep-2016 19:31:51.224 CDT
+got tau
+tau vis pt: 50.0781 genEta: 2.78765 genPhi: 2.72812
+found matched track pt: 4.21011
+Begin processing the 505th record. Run 1, Event 49785, LumiSection 506 at 07-Sep-2016 19:31:54.137 CDT
+got tau
+tau vis pt: 17.038 genEta: 0.192636 genPhi: 2.72798
+found matched track pt: 4.41592
+Begin processing the 506th record. Run 1, Event 49786, LumiSection 506 at 07-Sep-2016 19:31:56.526 CDT
+got tau
+tau vis pt: 23.2132 genEta: 2.06766 genPhi: 3.07601
+found matched track pt: 8.93616
+Begin processing the 507th record. Run 1, Event 49787, LumiSection 506 at 07-Sep-2016 19:32:00.571 CDT
+got tau
+tau vis pt: 37.1182 genEta: -1.11063 genPhi: 0.664258
+found matched track pt: 35.8522
+Begin processing the 508th record. Run 1, Event 49788, LumiSection 506 at 07-Sep-2016 19:32:03.564 CDT
+got tau
+tau vis pt: 66.0075 genEta: -0.607342 genPhi: 1.65498
+found matched track pt: 62.2728
+Begin processing the 509th record. Run 1, Event 49789, LumiSection 506 at 07-Sep-2016 19:32:06.391 CDT
+got tau
+tau vis pt: 79.5774 genEta: 1.17385 genPhi: 1.14908
+found matched track pt: 80.0547
+Begin processing the 510th record. Run 1, Event 49790, LumiSection 506 at 07-Sep-2016 19:32:09.738 CDT
+got tau
+tau vis pt: 54.414 genEta: 2.31007 genPhi: -1.17862
+found matched track pt: 53.4032
+Begin processing the 511th record. Run 1, Event 49791, LumiSection 506 at 07-Sep-2016 19:32:12.310 CDT
+got tau
+tau vis pt: 58.9954 genEta: -1.91217 genPhi: 2.38398
+found matched track pt: 29.6799
+Begin processing the 512th record. Run 1, Event 49792, LumiSection 506 at 07-Sep-2016 19:32:14.687 CDT
+got tau
+tau vis pt: 21.031 genEta: 0.344704 genPhi: -0.773056
+found matched track pt: 12.9425
+Begin processing the 513th record. Run 1, Event 49793, LumiSection 506 at 07-Sep-2016 19:32:17.727 CDT
+got tau
+tau vis pt: 5.61094 genEta: -0.14919 genPhi: -0.988733
+found matched track pt: 5.99703
+Begin processing the 514th record. Run 1, Event 49794, LumiSection 506 at 07-Sep-2016 19:32:21.784 CDT
+got tau
+tau vis pt: 6.98438 genEta: -0.461402 genPhi: 0.365161
+found matched track pt: 5.96294
+Begin processing the 515th record. Run 1, Event 49795, LumiSection 506 at 07-Sep-2016 19:32:25.664 CDT
+got tau
+tau vis pt: 41.682 genEta: 0.00951709 genPhi: -1.14413
+found matched track pt: 35.7669
+Begin processing the 516th record. Run 1, Event 49796, LumiSection 506 at 07-Sep-2016 19:32:28.511 CDT
+got tau
+tau vis pt: 51.8614 genEta: -0.46117 genPhi: -3.13122
+found matched track pt: 10.3697
+Begin processing the 517th record. Run 1, Event 49797, LumiSection 506 at 07-Sep-2016 19:32:31.000 CDT
+got tau
+tau vis pt: 47.2867 genEta: -2.24001 genPhi: -0.463559
+found matched track pt: 18.4138
+Begin processing the 518th record. Run 1, Event 49798, LumiSection 506 at 07-Sep-2016 19:32:33.946 CDT
+got tau
+tau vis pt: 50.7602 genEta: 2.63718 genPhi: 0.487092
+found matched track pt: 2.74671
+Begin processing the 519th record. Run 1, Event 49799, LumiSection 506 at 07-Sep-2016 19:32:36.659 CDT
+got tau
+tau vis pt: 45.499 genEta: 0.189648 genPhi: -2.8985
+found matched track pt: 13.2103
+Begin processing the 520th record. Run 1, Event 49800, LumiSection 506 at 07-Sep-2016 19:32:39.124 CDT
+got tau
+tau vis pt: 12.9475 genEta: -1.25094 genPhi: 0.981124
+found matched track pt: 5.74719
+Begin processing the 521st record. Run 1, Event 49801, LumiSection 506 at 07-Sep-2016 19:32:42.099 CDT
+got tau
+tau vis pt: 50.6521 genEta: -0.587952 genPhi: -2.94384
+found matched track pt: 26.4108
+Begin processing the 522nd record. Run 1, Event 49802, LumiSection 506 at 07-Sep-2016 19:32:45.375 CDT
+got tau
+tau vis pt: 41.6277 genEta: 1.25835 genPhi: 2.05681
+found matched track pt: 41.7065
+Begin processing the 523rd record. Run 1, Event 49803, LumiSection 506 at 07-Sep-2016 19:32:48.117 CDT
+got tau
+tau vis pt: 12.2939 genEta: 0.9788 genPhi: 2.62422
+found matched track pt: 7.82546
+Begin processing the 524th record. Run 1, Event 49804, LumiSection 506 at 07-Sep-2016 19:32:52.370 CDT
+got tau
+tau vis pt: 75.933 genEta: -2.55015 genPhi: -2.04524
+found matched track pt: 2.84516
+Begin processing the 525th record. Run 1, Event 49805, LumiSection 506 at 07-Sep-2016 19:32:55.255 CDT
+got tau
+tau vis pt: 8.98657 genEta: 2.0973 genPhi: 1.62852
+found matched track pt: 6.68431
+Begin processing the 526th record. Run 1, Event 49806, LumiSection 506 at 07-Sep-2016 19:32:57.845 CDT
+got tau
+tau vis pt: 11.1487 genEta: 1.59946 genPhi: -1.19244
+found matched track pt: 3.93797
+Begin processing the 527th record. Run 1, Event 49807, LumiSection 506 at 07-Sep-2016 19:33:00.183 CDT
+got tau
+tau vis pt: 59.0672 genEta: -2.63036 genPhi: -1.61181
+found matched track pt: 2.74077
+Begin processing the 528th record. Run 1, Event 49808, LumiSection 506 at 07-Sep-2016 19:33:03.270 CDT
+got tau
+tau vis pt: 54.4125 genEta: 1.98968 genPhi: -2.63154
+found matched track pt: 50.8426
+Begin processing the 529th record. Run 1, Event 49809, LumiSection 506 at 07-Sep-2016 19:33:06.940 CDT
+got tau
+tau vis pt: 6.75573 genEta: 1.83642 genPhi: 0.733716
+found matched track pt: 23.0708
+Begin processing the 530th record. Run 1, Event 49810, LumiSection 506 at 07-Sep-2016 19:33:10.013 CDT
+got tau
+tau vis pt: 24.1072 genEta: 0.0907872 genPhi: -1.03434
+found matched track pt: 16.4906
+Begin processing the 531st record. Run 1, Event 49811, LumiSection 506 at 07-Sep-2016 19:33:12.884 CDT
+got tau
+tau vis pt: 11.3303 genEta: 0.69094 genPhi: -1.03319
+found matched track pt: 5.26084
+Begin processing the 532nd record. Run 1, Event 49812, LumiSection 506 at 07-Sep-2016 19:33:15.960 CDT
+got tau
+tau vis pt: 43.8002 genEta: 1.77119 genPhi: 1.23935
+found matched track pt: 91.3867
+Begin processing the 533rd record. Run 1, Event 49813, LumiSection 506 at 07-Sep-2016 19:33:20.213 CDT
+got tau
+tau vis pt: 11.9198 genEta: -1.46861 genPhi: -1.3684
+found matched track pt: 29.3938
+Begin processing the 534th record. Run 1, Event 49814, LumiSection 506 at 07-Sep-2016 19:33:22.946 CDT
+got tau
+tau vis pt: 49.5129 genEta: 2.21393 genPhi: -2.53634
+found matched track pt: 26.044
+Begin processing the 535th record. Run 1, Event 49815, LumiSection 506 at 07-Sep-2016 19:33:26.559 CDT
+got tau
+tau vis pt: 2.26754 genEta: 1.70469 genPhi: -0.76409
+found matched track pt: 3.56025
+Begin processing the 536th record. Run 1, Event 49816, LumiSection 506 at 07-Sep-2016 19:33:30.508 CDT
+got tau
+tau vis pt: 26.6589 genEta: -0.811182 genPhi: -2.58986
+found matched track pt: 24.8219
+Begin processing the 537th record. Run 1, Event 49817, LumiSection 506 at 07-Sep-2016 19:33:33.879 CDT
+got tau
+tau vis pt: 58.8472 genEta: 2.42832 genPhi: 1.62438
+found matched track pt: 50.6804
+Begin processing the 538th record. Run 1, Event 49818, LumiSection 506 at 07-Sep-2016 19:33:37.703 CDT
+got tau
+tau vis pt: 12.2936 genEta: 1.99856 genPhi: 0.30284
+found matched track pt: 12.4235
+Begin processing the 539th record. Run 1, Event 49819, LumiSection 506 at 07-Sep-2016 19:33:40.881 CDT
+got tau
+tau vis pt: 16.7616 genEta: -1.00715 genPhi: -1.34358
+found matched track pt: 12.3427
+Begin processing the 540th record. Run 1, Event 49820, LumiSection 506 at 07-Sep-2016 19:33:44.696 CDT
+got tau
+tau vis pt: 33.7627 genEta: 2.7935 genPhi: 1.60871
+found matched track pt: 3.49161
+Begin processing the 541st record. Run 1, Event 49821, LumiSection 506 at 07-Sep-2016 19:33:47.245 CDT
+got tau
+tau vis pt: 34.4033 genEta: 0.374932 genPhi: -1.03036
+found matched track pt: 24.0511
+Begin processing the 542nd record. Run 1, Event 49822, LumiSection 506 at 07-Sep-2016 19:33:50.037 CDT
+got tau
+tau vis pt: 46.1541 genEta: -1.21462 genPhi: -2.50382
+found matched track pt: 22.7076
+Begin processing the 543rd record. Run 1, Event 49823, LumiSection 506 at 07-Sep-2016 19:33:54.165 CDT
+got tau
+tau vis pt: 64.6444 genEta: 2.22324 genPhi: -1.16043
+found matched track pt: 69.2586
+Begin processing the 544th record. Run 1, Event 49824, LumiSection 506 at 07-Sep-2016 19:33:57.107 CDT
+got tau
+tau vis pt: 26.453 genEta: 2.44823 genPhi: 0.177213
+found matched track pt: 24.5659
+Begin processing the 545th record. Run 1, Event 49825, LumiSection 506 at 07-Sep-2016 19:34:00.712 CDT
+got tau
+tau vis pt: 16.5152 genEta: -2.60689 genPhi: -0.834222
+found matched track pt: 2.54743
+Begin processing the 546th record. Run 1, Event 49826, LumiSection 506 at 07-Sep-2016 19:34:04.221 CDT
+got tau
+tau vis pt: 70.8817 genEta: -1.50529 genPhi: -1.3137
+found matched track pt: 108.568
+Begin processing the 547th record. Run 1, Event 49827, LumiSection 506 at 07-Sep-2016 19:34:08.376 CDT
+got tau
+tau vis pt: 3.95602 genEta: -1.6345 genPhi: 0.740574
+found matched track pt: 4.02845
+Begin processing the 548th record. Run 1, Event 49828, LumiSection 506 at 07-Sep-2016 19:34:11.390 CDT
+got tau
+tau vis pt: 48.0159 genEta: -1.29114 genPhi: 0.562853
+found matched track pt: 31.2058
+Begin processing the 549th record. Run 1, Event 49829, LumiSection 506 at 07-Sep-2016 19:34:14.357 CDT
+got tau
+tau vis pt: 19.9869 genEta: 2.63192 genPhi: -3.1331
+Begin processing the 550th record. Run 1, Event 49830, LumiSection 506 at 07-Sep-2016 19:34:17.000 CDT
+got tau
+tau vis pt: 2.49182 genEta: 1.03058 genPhi: 2.68268
+found matched track pt: 3.73911
+Begin processing the 551st record. Run 1, Event 49831, LumiSection 506 at 07-Sep-2016 19:34:20.351 CDT
+got tau
+tau vis pt: 10.8917 genEta: -2.8533 genPhi: -1.10083
+Begin processing the 552nd record. Run 1, Event 49832, LumiSection 506 at 07-Sep-2016 19:34:23.233 CDT
+got tau
+tau vis pt: 42.0624 genEta: 2.73724 genPhi: 1.71652
+found matched track pt: 2.91943
+Begin processing the 553rd record. Run 1, Event 49833, LumiSection 506 at 07-Sep-2016 19:34:26.314 CDT
+got tau
+tau vis pt: 15.0964 genEta: 1.28464 genPhi: -1.27894
+found matched track pt: 5.62696
+Begin processing the 554th record. Run 1, Event 49834, LumiSection 506 at 07-Sep-2016 19:34:30.242 CDT
+got tau
+tau vis pt: 15.8988 genEta: -2.77057 genPhi: -1.12318
+Begin processing the 555th record. Run 1, Event 49835, LumiSection 506 at 07-Sep-2016 19:34:33.658 CDT
+got tau
+tau vis pt: 9.90693 genEta: 0.342607 genPhi: 0.0627994
+found matched track pt: 9.93363
+Begin processing the 556th record. Run 1, Event 49836, LumiSection 506 at 07-Sep-2016 19:34:37.727 CDT
+got tau
+tau vis pt: 5.77118 genEta: 1.40928 genPhi: 1.9099
+found matched track pt: 5.85815
+Begin processing the 557th record. Run 1, Event 49837, LumiSection 506 at 07-Sep-2016 19:34:40.059 CDT
+got tau
+tau vis pt: 21.8775 genEta: -2.28531 genPhi: 1.78259
+found matched track pt: 9.77334
+Begin processing the 558th record. Run 1, Event 49838, LumiSection 506 at 07-Sep-2016 19:34:42.480 CDT
+got tau
+tau vis pt: 24.6372 genEta: 0.971634 genPhi: 1.14731
+found matched track pt: 3.10987
+Begin processing the 559th record. Run 1, Event 49839, LumiSection 506 at 07-Sep-2016 19:34:46.118 CDT
+got tau
+tau vis pt: 37.2562 genEta: 2.77543 genPhi: -2.57864
+found matched track pt: 3.80155
+Begin processing the 560th record. Run 1, Event 49840, LumiSection 506 at 07-Sep-2016 19:34:49.522 CDT
+got tau
+tau vis pt: 32.0301 genEta: 0.460598 genPhi: -0.369002
+found matched track pt: 12.7513
+Begin processing the 561st record. Run 1, Event 49841, LumiSection 506 at 07-Sep-2016 19:34:51.886 CDT
+got tau
+tau vis pt: 34.3182 genEta: 0.911328 genPhi: 0.329498
+found matched track pt: 13.8576
+Begin processing the 562nd record. Run 1, Event 49842, LumiSection 506 at 07-Sep-2016 19:34:54.808 CDT
+got tau
+tau vis pt: 14.7866 genEta: -2.94549 genPhi: -2.88579
+Begin processing the 563rd record. Run 1, Event 49843, LumiSection 506 at 07-Sep-2016 19:34:57.514 CDT
+got tau
+tau vis pt: 50.5483 genEta: 2.4881 genPhi: -0.226073
+found matched track pt: 10.6916
+Begin processing the 564th record. Run 1, Event 49844, LumiSection 506 at 07-Sep-2016 19:35:01.934 CDT
+got tau
+tau vis pt: 50.902 genEta: -0.618055 genPhi: 0.142096
+found matched track pt: 12.5113
+Begin processing the 565th record. Run 1, Event 49845, LumiSection 506 at 07-Sep-2016 19:35:05.348 CDT
+got tau
+tau vis pt: 6.36189 genEta: 1.7496 genPhi: 3.08809
+found matched track pt: 6.38837
+Begin processing the 566th record. Run 1, Event 49846, LumiSection 506 at 07-Sep-2016 19:35:07.362 CDT
+got tau
+tau vis pt: 14.1182 genEta: -1.66092 genPhi: 0.248578
+found matched track pt: 12.8909
+Begin processing the 567th record. Run 1, Event 49847, LumiSection 506 at 07-Sep-2016 19:35:10.995 CDT
+got tau
+tau vis pt: 46.9615 genEta: -2.80193 genPhi: -2.56918
+found matched track pt: 2.74205
+Begin processing the 568th record. Run 1, Event 49848, LumiSection 506 at 07-Sep-2016 19:35:13.853 CDT
+got tau
+tau vis pt: 73.7698 genEta: 1.21243 genPhi: -2.23719
+found matched track pt: 25.8962
+Begin processing the 569th record. Run 1, Event 49849, LumiSection 506 at 07-Sep-2016 19:35:16.250 CDT
+got tau
+tau vis pt: 18.3907 genEta: 1.00482 genPhi: 2.17587
+found matched track pt: 3.18091
+Begin processing the 570th record. Run 1, Event 49850, LumiSection 506 at 07-Sep-2016 19:35:19.231 CDT
+got tau
+tau vis pt: 18.9035 genEta: -2.81468 genPhi: 0.441544
+Begin processing the 571st record. Run 1, Event 49851, LumiSection 506 at 07-Sep-2016 19:35:21.609 CDT
+got tau
+tau vis pt: 66.6189 genEta: -0.851649 genPhi: 2.7408
+found matched track pt: 67.0807
+Begin processing the 572nd record. Run 1, Event 49852, LumiSection 506 at 07-Sep-2016 19:35:24.209 CDT
+got tau
+tau vis pt: 77.3825 genEta: 0.862274 genPhi: 2.72913
+found matched track pt: 34.4404
+Begin processing the 573rd record. Run 1, Event 49853, LumiSection 506 at 07-Sep-2016 19:35:26.896 CDT
+got tau
+tau vis pt: 20.7307 genEta: -2.01379 genPhi: -0.83023
+found matched track pt: 20.6953
+Begin processing the 574th record. Run 1, Event 49854, LumiSection 506 at 07-Sep-2016 19:35:30.974 CDT
+got tau
+tau vis pt: 23.0722 genEta: -0.0529295 genPhi: -0.122569
+found matched track pt: 19.983
+Begin processing the 575th record. Run 1, Event 49855, LumiSection 506 at 07-Sep-2016 19:35:33.505 CDT
+got tau
+tau vis pt: 11.2892 genEta: -1.01368 genPhi: -2.70168
+found matched track pt: 6.71299
+Begin processing the 576th record. Run 1, Event 49856, LumiSection 506 at 07-Sep-2016 19:35:37.069 CDT
+got tau
+tau vis pt: 21.4712 genEta: 1.49354 genPhi: -0.598119
+found matched track pt: 2.64744
+Begin processing the 577th record. Run 1, Event 49857, LumiSection 506 at 07-Sep-2016 19:35:40.341 CDT
+got tau
+tau vis pt: 20.9621 genEta: -0.0843762 genPhi: 2.89763
+found matched track pt: 17.5397
+Begin processing the 578th record. Run 1, Event 49858, LumiSection 506 at 07-Sep-2016 19:35:43.000 CDT
+got tau
+tau vis pt: 47.9432 genEta: 2.26098 genPhi: -1.7462
+found matched track pt: 46.6585
+Begin processing the 579th record. Run 1, Event 49859, LumiSection 506 at 07-Sep-2016 19:35:46.884 CDT
+got tau
+tau vis pt: 55.4613 genEta: -2.27071 genPhi: -3.12964
+found matched track pt: 35.5526
+Begin processing the 580th record. Run 1, Event 49860, LumiSection 506 at 07-Sep-2016 19:35:50.236 CDT
+got tau
+tau vis pt: 75.7599 genEta: 1.4724 genPhi: -2.96701
+found matched track pt: 74.3189
+Begin processing the 581st record. Run 1, Event 49861, LumiSection 506 at 07-Sep-2016 19:35:53.434 CDT
+got tau
+tau vis pt: 4.99455 genEta: 0.183206 genPhi: 2.17368
+found matched track pt: 4.98394
+Begin processing the 582nd record. Run 1, Event 49862, LumiSection 506 at 07-Sep-2016 19:35:55.504 CDT
+got tau
+tau vis pt: 30.122 genEta: -0.596349 genPhi: -2.38517
+found matched track pt: 7.9155
+Begin processing the 583rd record. Run 1, Event 49863, LumiSection 506 at 07-Sep-2016 19:35:58.460 CDT
+got tau
+tau vis pt: 29.8157 genEta: -0.145394 genPhi: 0.634745
+found matched track pt: 23.4616
+Begin processing the 584th record. Run 1, Event 49864, LumiSection 506 at 07-Sep-2016 19:36:01.075 CDT
+got tau
+tau vis pt: 52.4268 genEta: 0.293126 genPhi: -1.76374
+found matched track pt: 12.5487
+Begin processing the 585th record. Run 1, Event 49865, LumiSection 506 at 07-Sep-2016 19:36:04.706 CDT
+got tau
+tau vis pt: 11.9692 genEta: 2.0218 genPhi: 2.11343
+found matched track pt: 12.2908
+Begin processing the 586th record. Run 1, Event 49866, LumiSection 506 at 07-Sep-2016 19:36:07.731 CDT
+got tau
+tau vis pt: 10.012 genEta: 1.92934 genPhi: -3.0945
+found matched track pt: 13.3162
+Begin processing the 587th record. Run 1, Event 49867, LumiSection 506 at 07-Sep-2016 19:36:12.291 CDT
+got tau
+tau vis pt: 48.2484 genEta: 0.742975 genPhi: 3.0113
+found matched track pt: 24.9416
+Begin processing the 588th record. Run 1, Event 49868, LumiSection 506 at 07-Sep-2016 19:36:16.162 CDT
+got tau
+tau vis pt: 10.0936 genEta: 2.81045 genPhi: -1.14975
+found matched track pt: 3.84317
+Begin processing the 589th record. Run 1, Event 49869, LumiSection 506 at 07-Sep-2016 19:36:20.364 CDT
+got tau
+tau vis pt: 13.0168 genEta: -1.932 genPhi: -0.525305
+found matched track pt: 15.1566
+Begin processing the 590th record. Run 1, Event 49870, LumiSection 506 at 07-Sep-2016 19:36:23.314 CDT
+got tau
+tau vis pt: 17.8014 genEta: 1.77343 genPhi: -1.20681
+found matched track pt: 17.9764
+Begin processing the 591st record. Run 1, Event 49871, LumiSection 506 at 07-Sep-2016 19:36:27.384 CDT
+got tau
+tau vis pt: 3.07558 genEta: 1.09275 genPhi: 1.68541
+found matched track pt: 3.73661
+Begin processing the 592nd record. Run 1, Event 49872, LumiSection 506 at 07-Sep-2016 19:36:30.584 CDT
+got tau
+tau vis pt: 38.59 genEta: -2.07713 genPhi: -2.63669
+found matched track pt: 24.7743
+Begin processing the 593rd record. Run 1, Event 49873, LumiSection 506 at 07-Sep-2016 19:36:33.795 CDT
+got tau
+tau vis pt: 29.5097 genEta: -0.89702 genPhi: 0.425827
+found matched track pt: 5.39712
+Begin processing the 594th record. Run 1, Event 49874, LumiSection 506 at 07-Sep-2016 19:36:36.870 CDT
+got tau
+tau vis pt: 67.9484 genEta: 0.69646 genPhi: -3.07403
+found matched track pt: 40.5362
+Begin processing the 595th record. Run 1, Event 49875, LumiSection 506 at 07-Sep-2016 19:36:39.202 CDT
+got tau
+tau vis pt: 65.4485 genEta: 1.05943 genPhi: 2.00699
+found matched track pt: 5.19613
+Begin processing the 596th record. Run 1, Event 49876, LumiSection 506 at 07-Sep-2016 19:36:42.518 CDT
+got tau
+tau vis pt: 4.36547 genEta: 2.55906 genPhi: -0.206248
+found matched track pt: 1.98726
+Begin processing the 597th record. Run 1, Event 49877, LumiSection 506 at 07-Sep-2016 19:36:44.867 CDT
+got tau
+tau vis pt: 7.28199 genEta: 1.11406 genPhi: -1.07894
+found matched track pt: 3.35356
+Begin processing the 598th record. Run 1, Event 49878, LumiSection 506 at 07-Sep-2016 19:36:48.051 CDT
+got tau
+tau vis pt: 4.62774 genEta: -1.46753 genPhi: -2.97709
+found matched track pt: 4.17999
+Begin processing the 599th record. Run 1, Event 49879, LumiSection 506 at 07-Sep-2016 19:36:50.220 CDT
+got tau
+tau vis pt: 45.5059 genEta: -2.40477 genPhi: -2.3306
+found matched track pt: 17.4933
+Begin processing the 600th record. Run 1, Event 49880, LumiSection 506 at 07-Sep-2016 19:36:53.075 CDT
+got tau
+tau vis pt: 46.1038 genEta: -2.44356 genPhi: 0.854884
+found matched track pt: 40.7159
+07-Sep-2016 19:36:56 CDT  Closed file file:/hdfs/store/mc/TTI2023Upg14D/SingleTauOneProngFlatPt10To100/GEN-SIM-DIGI-RAW/PU140bx25_PH2_1K_FB_V3-v2/00000/06ABA3EB-FCE6-E311-85A2-0026189438BD.root
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 fileAction           -s file_close                             1        1
+    2 fileAction           -s file_open                              2        2
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 fileAction           PostEndRun                        
+    2 fileAction           pre-events       pre-events       
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+System                  3                   3
