@@ -144,7 +144,8 @@ process.pL1TkPrimaryVertex = cms.Path( process.L1TkPrimaryVertex )
 # 
 # Analyzer starts here
 process.tauAnalyzer = cms.EDAnalyzer('L1TauStudy',
-                                     L1TrackInputTag = cms.InputTag("TTTracksFromPixelDigisLargerPhi","Level1TTTracks"),
+                                     #L1TrackInputTag = cms.InputTag("TTTracksFromPixelDigisLargerPhi","Level1TTTracks"),
+                                     L1TrackInputTag = cms.InputTag("TTTracksFromPixelDigis","Level1TTTracks"),
                                      L1TrackPrimaryVertexTag = cms.InputTag("L1TkPrimaryVertex"),
                                      ecalDigis = cms.InputTag("ecalDigis:EcalTriggerPrimitives"),
                                      hcalDigis = cms.InputTag("valHcalTriggerPrimitiveDigis"),
@@ -197,3 +198,18 @@ process.TFileService = cms.Service("TFileService",
    fileName = cms.string("tmp_eff.root"), 
    closeFileFast = cms.untracked.bool(True)
 )
+
+
+
+#dump_file = open('dump.py','w')
+#dump_file.write(process.dumpPython())
+
+#process.e = cms.EndPath(process.out)
+
+
+#process.out = cms.OutputModule("PoolOutputModule",
+#    fileName = cms.untracked.string("dumpout.root"),
+#    outputCommands = cms.untracked.vstring('keep *_*_*_Level1TTTracks') #'keep *_*_*_L1TCaloSummaryTest')
+#   #outputCommands = cms.untracked.vstring('drop *', 'keep *_l1tCaloLayer1Digis_*_*, keep *_*_*_L1TCaloSummaryTest' )
+#)
+#process.e = cms.EndPath(process.out)
