@@ -140,6 +140,8 @@ class L1TEventDisplayGenerator : public edm::EDAnalyzer {
   int run, lumi, event;
   double isoTauPt, rlxTauPt, isoTauEta, rlxTauEta, isoTauPhi, rlxTauPhi;
   double recoPt, recoEta, recoPhi;
+  double genPt, genEta, genPhi;
+  double genPizeroPt, genPizeroEta, genPizeroPhi;
   int l1RlxMatched, l1IsoMatched;
   int decayMode;
   double tauEtaEcalEnt,tauPhiEcalEnt,rawEcal, rawHcal, ecal, hcal, jetEt, jetEta, jetPhi, nvtx;

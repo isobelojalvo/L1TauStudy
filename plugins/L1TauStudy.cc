@@ -95,6 +95,9 @@ struct l1Object{
     double ECALEnergy;
     int tauDecayMode;
     double iso;
+  double stripPt;
+  double stripEta;
+  double stripPhi;
 };
 
 bool compareByPt (TTTrack<Ref_PixelDigi_> i,TTTrack<Ref_PixelDigi_> j) { 
@@ -160,10 +163,6 @@ class L1TauStudy : public edm::EDAnalyzer {
 	  //std::cout<<"erase object"<<std::endl;
 	  inputL1Objects.erase(inputL1Objects.begin()+j);
 	  j = j-1;
-	  //}else{
-	  //inputL1Objects.erase(inputL1Objects.begin()+i);
-	  //break;
-	  //}
 	}
       }
     }
@@ -205,6 +204,7 @@ class L1TauStudy : public edm::EDAnalyzer {
 
   TTree* efficiencyTree;
   TTree* oneProngTree;
+  TTree* oneProngPi0Tree;
   TTree* threeProngTree;
 
   double genPt, genEta, genPhi;
@@ -213,10 +213,15 @@ class L1TauStudy : public edm::EDAnalyzer {
   double l1TauPt, l1TauEta, l1TauPhi;
   double gen1ProngPt, gen1ProngEta, gen1ProngPhi;
   double gen3ProngPt, gen3ProngEta, gen3ProngPhi;
+  double gen1ProngPi0Pt, gen1ProngPi0Eta, gen1ProngPi0Phi;
+  double genPiPlusPt, genPiPlusEta, genPiPlusPhi;
+  double genPiZeroPt, genPiZeroEta, genPiZeroPhi;
   int gen1ProngDecayMode;
+  int gen1ProngPi0DecayMode;
   int gen3ProngDecayMode;
 
   l1Object oneProngTau;
+  l1Object oneProngPi0Tau;
   l1Object threeProngTau;
 
   TH1F* nEvents;
@@ -312,6 +317,43 @@ L1TauStudy::L1TauStudy(const edm::ParameterSet& cfg) :
   
   oneProngTree->Branch("isoRaw",  &oneProngTau.iso,   "isoRaw/D");
   oneProngTree->Branch("decayMode",  &oneProngTau.tauDecayMode,   "decayMode/I");
+
+
+  oneProngPi0Tree = fs->make<TTree>("oneProngPi0Tree", "Crystal cluster individual crystal pt values");
+  oneProngPi0Tree->Branch("run",    &run,     "run/I");
+  oneProngPi0Tree->Branch("lumi",   &lumi,    "lumi/I");
+  oneProngPi0Tree->Branch("event",  &event,   "event/I");
+  
+  oneProngPi0Tree->Branch("genPt",   &gen1ProngPi0Pt,   "genPt/D");
+  oneProngPi0Tree->Branch("genEta",  &gen1ProngPi0Eta,   "genEta/D");
+  oneProngPi0Tree->Branch("genPhi",  &gen1ProngPi0Phi,   "genPhi/D");
+  oneProngPi0Tree->Branch("genDM",   &gen1ProngPi0DecayMode,   "genDM/I");
+
+  oneProngPi0Tree->Branch("genPiPlusPt",   &genPiPlusPt,   "genPiPlusPt/D");
+  oneProngPi0Tree->Branch("genPiPlusEta",  &genPiPlusEta,   "genPiPlusEta/D");
+  oneProngPi0Tree->Branch("genPiPlusPhi",  &genPiPlusPhi,   "genPiPlusPhi/D");
+
+  oneProngPi0Tree->Branch("genPiZeroPt",   &genPiZeroPt,   "genPiZeroPt/D");
+  oneProngPi0Tree->Branch("genPiZeroEta",  &genPiZeroEta,   "genPiZeroEta/D");
+  oneProngPi0Tree->Branch("genPiZeroPhi",  &genPiZeroPhi,   "genPiZeroPhi/D");
+
+  oneProngPi0Tree->Branch("trackPt",  &oneProngPi0Tau.trackPt,   "trackPt/D");
+  oneProngPi0Tree->Branch("trackEta", &oneProngPi0Tau.trackEta,   "trackEta/D");
+  oneProngPi0Tree->Branch("trackPhi", &oneProngPi0Tau.trackPhi,   "trackPhi/D");
+
+  oneProngPi0Tree->Branch("objectPt",  &oneProngPi0Tau.objectPt,   "objectPt/D");
+  oneProngPi0Tree->Branch("objectEta", &oneProngPi0Tau.objectEta,   "objectEta/D");
+  oneProngPi0Tree->Branch("objectPhi", &oneProngPi0Tau.objectPhi,   "objectPhi/D");
+
+  oneProngPi0Tree->Branch("stripPt",  &oneProngPi0Tau.stripPt,   "stripPt/D");
+  oneProngPi0Tree->Branch("stripEta", &oneProngPi0Tau.stripEta,   "stripEta/D");
+  oneProngPi0Tree->Branch("stripPhi", &oneProngPi0Tau.stripPhi,   "stripPhi/D");
+
+  oneProngPi0Tree->Branch("HCALEnergy",  &oneProngPi0Tau.HCALEnergy,   "HCALEnergy/D");
+  oneProngPi0Tree->Branch("ECALEnergy",  &oneProngPi0Tau.ECALEnergy,   "ECALEnergy/D");
+  
+  oneProngPi0Tree->Branch("isoRaw",     &oneProngPi0Tau.iso,   "isoRaw/D");
+  oneProngPi0Tree->Branch("decayMode",  &oneProngPi0Tau.tauDecayMode,   "decayMode/I");
 
 
   threeProngTree = fs->make<TTree>("threeProngTree", "Crystal cluster individual crystal pt values");
@@ -553,9 +595,17 @@ L1TauStudy::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
    std::vector<l1Object> l1OneProngTaus_eta2p1;
    std::vector<l1Object> l1OneProngTaus_eta2p4;
 
+   std::vector<l1Object> l1OneProngPi0Taus;
+   std::vector<l1Object> l1OneProngPi0Taus_eta2p1;
+   std::vector<l1Object> l1OneProngPi0Taus_eta2p4;
+
    std::vector<l1Object> l1OneProngTausIso;
    std::vector<l1Object> l1OneProngTausIso_eta2p1;
    std::vector<l1Object> l1OneProngTausIso_eta2p4;
+
+   std::vector<l1Object> l1OneProngPi0TausIso;
+   std::vector<l1Object> l1OneProngPi0TausIso_eta2p1;
+   std::vector<l1Object> l1OneProngPi0TausIso_eta2p4;
 
    ///Fill 1 prong taus here
    triggerGeometryTools trigTools;
@@ -641,7 +691,148 @@ L1TauStudy::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
        }
      }
    }
+   /////////
 
+
+   ///Fill 1 prong pi0 taus here
+   for(auto l1Track : l1Tracks){
+     if(l1Track.getMomentum().perp()>15){//arbitrary seed
+       vector<TLorentzVector> isoTracks;
+       vector<TLorentzVector> isoECAL;
+       vector<TLorentzVector> isoHCAL;
+
+       TLorentzVector tempTrack;
+       double pt = l1Track.getMomentum().perp();
+       double eta = l1Track.getMomentum().eta();
+       double phi = l1Track.getMomentum().phi();
+       tempTrack.SetPtEtaPhiE(pt, eta, phi, pt);
+
+       //find closest hcalTPG
+       std::vector<TLorentzVector> nearHCALTowers;
+       for(auto hcalTPG : allHcalTPGs){
+	 if(hcalTPG.Pt()>0)
+	   if(tempTrack.DeltaR(hcalTPG)<0.087){
+	     //std::cout<<"hcal tpgs ";
+	     //printLorentzVector(hcalTPG);
+	     //std::cout<<std::endl;
+	     nearHCALTowers.push_back(hcalTPG);
+	   }
+       }
+       float hcalEnergy = trigTools.SumTLorentzPt(nearHCALTowers);
+       
+       std::vector<TLorentzVector> nearECALTowers;
+       for(auto ecalTPG : allEcalTPGs){
+	 if(ecalTPG.Pt()>0)
+	   if(tempTrack.DeltaR(ecalTPG)<0.087){
+	     //std::cout<<"ecal tpgs ";
+	     //printLorentzVector(ecalTPG);
+	     //std::cout<<std::endl;
+	     nearECALTowers.push_back(ecalTPG);
+	   }
+       }
+       float ecalEnergy = trigTools.SumTLorentzPt(nearECALTowers);
+
+       TLorentzVector stripSeed;
+       stripSeed.SetPtEtaPhiE(0,0,0,0);
+
+       for(auto ecalTPG : allEcalTPGs){
+	 if(ecalTPG.Pt()>0)
+	   if(tempTrack.DeltaR(ecalTPG)<0.15)
+	     {
+	       if(ecalTPG.Pt()>stripSeed.Pt())
+		 {
+		   stripSeed.SetPtEtaPhiE(ecalTPG.Pt(),ecalTPG.Eta(),ecalTPG.Phi(),ecalTPG.Pt());
+		 }
+	     }
+       }
+       
+       float totalStripPt = 0;
+       //std::cout<<"Strip Pt: "<<stripSeed.Pt()<<" Eta: "<<stripSeed.Eta()<<" Phi: "<<stripSeed.Phi()<<std::endl;
+       if(stripSeed.Pt()>0){
+	 for(auto ecalTPG : allEcalTPGs){
+	   if(ecalTPG.Pt()>0)
+	     if(fabs(stripSeed.Phi()-ecalTPG.Phi()) < 0.15 && fabs(stripSeed.Eta()-ecalTPG.Eta()) < 0.087){
+	       //purposely taking the strip cand as it was not previously summed
+	       //if(stripSeed.Phi() == ecalTPG.Phi() && stripSeed.Eta() == ecalTPG.Eta())
+	       //continue;
+	       
+	       totalStripPt += ecalTPG.Pt();
+	       std::cout<<"ecal TPG added "<<ecalTPG.Pt()<< " Eta: "<<ecalTPG.Eta() << " Phi "<< ecalTPG.Phi()<<std::endl;
+	     }
+	 }
+       }
+       std::cout<<"totalStripPt After: "<<totalStripPt<<std::endl;
+       for(auto l1TrackB : l1Tracks){
+	 TLorentzVector tempTrackB;
+	 double ptB = l1TrackB.getMomentum().perp();
+	 double etaB = l1TrackB.getMomentum().eta();
+	 double phiB = l1TrackB.getMomentum().phi();
+	 tempTrackB.SetPtEtaPhiE(ptB, etaB, phiB, ptB);
+	 //check to see if it is the same track
+	 if(tempTrackB == tempTrack)
+	   continue;
+	 if(tempTrack.DeltaR(tempTrackB)<0.4)
+	   isoTracks.push_back(tempTrackB);
+       }
+
+       float trackIsoPt = trigTools.SumTLorentzPt(isoTracks);
+
+       l1Object tempL1Object;
+       std::cout<<"pt "<<pt<<" totalStripPt "<<totalStripPt<<std::endl;
+       tempL1Object.objectPt = pt + totalStripPt;
+
+       if(totalStripPt>0)
+	 tempL1Object.objectEta = (eta*pt + stripSeed.Eta()*totalStripPt)/(pt + totalStripPt);
+       else
+	 tempL1Object.objectEta = eta;
+
+       if(totalStripPt>0)
+	 tempL1Object.objectPhi = (phi*pt + stripSeed.Phi()*totalStripPt)/(pt + totalStripPt);
+       else
+	 tempL1Object.objectPhi = phi;
+
+       tempL1Object.stripPt = totalStripPt;
+
+       if(totalStripPt>0){
+	 tempL1Object.stripEta = stripSeed.Eta();
+	 tempL1Object.stripPhi = stripSeed.Phi();
+       }
+       else{
+	 tempL1Object.stripEta = 0;
+	 tempL1Object.stripPhi = 0;
+       }
+       //std::cout<<"totalTrackPt "<<pt<<std::endl;
+       //std::cout<<"totalStripPt "<<totalStripPt<<std::endl;
+
+       tempL1Object.trackPt = pt;
+       tempL1Object.trackEta = eta;
+       tempL1Object.trackPhi = phi;
+       tempL1Object.ECALEnergy = ecalEnergy;
+       tempL1Object.HCALEnergy = hcalEnergy;
+       tempL1Object.tauDecayMode = 1;
+       tempL1Object.iso = trackIsoPt;
+
+       //loose ID
+       if(totalStripPt>2.5){
+	 l1OneProngPi0Taus.push_back(tempL1Object);
+	 if(abs(eta)<2.1)
+	   l1OneProngPi0Taus_eta2p1.push_back(tempL1Object);
+	 if(abs(eta)<2.4)
+	   l1OneProngPi0Taus_eta2p4.push_back(tempL1Object);
+
+	 if(trackIsoPt<10){
+	   l1OneProngPi0TausIso.push_back(tempL1Object);
+	   if(abs(eta)<2.1)
+	     l1OneProngPi0TausIso_eta2p1.push_back(tempL1Object);
+	   if(abs(eta)<2.4)
+	     l1OneProngPi0TausIso_eta2p4.push_back(tempL1Object);
+	 }
+       }
+     }
+   }
+
+
+   /////////
    int i = 0;
    for(auto l1ThreeProngTau: l1OneProngTaus){
      std::cout<<"i: "<<i<<std::endl;
@@ -650,7 +841,7 @@ L1TauStudy::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
    }
 
 
-   //std::cout<<"here 1"<<std::endl;
+
    if(l1OneProngTaus.size()>0)
      l1SingleProngTau_pt->Fill(l1OneProngTaus.at(0).objectPt);
    
@@ -670,6 +861,59 @@ L1TauStudy::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup)
      l1SingleProngTauIso_pt_eta2p4->Fill(l1OneProngTausIso_eta2p4.at(0).objectPt);
 
 
+   //create one prong taus when gen one prong tau is nearby
+   for(auto GenOneProngPi0Tau: GenOneProngPi0Taus){
+     gen1ProngPi0Pt = GenOneProngPi0Tau.p4.Pt();
+     gen1ProngPi0Eta = GenOneProngPi0Tau.p4.Eta();
+     gen1ProngPi0Phi = GenOneProngPi0Tau.p4.Phi();
+     gen1ProngPi0DecayMode = GenOneProngPi0Tau.decayMode;
+     std::cout<<"Gen-level 1 Prong Pi0 Tau (decaymode "<<gen1ProngPi0DecayMode <<") PT: "<<gen1ProngPi0Pt<<" Eta: "<<gen1ProngPi0Eta<<" Phi: "<<gen1ProngPi0Phi<<std::endl;
+     oneProngPi0Tau.HCALEnergy = 0;
+     oneProngPi0Tau.ECALEnergy = 0;
+     oneProngPi0Tau.trackPt  = 0;
+     oneProngPi0Tau.trackEta = 0;
+     oneProngPi0Tau.trackPhi = 0;
+     
+     triggerGeometryTools trigTools;
+     for(auto l1OneProngPi0Tau : l1OneProngPi0Taus){
+       //for(auto oneProngSeed : oneProngSeeds){
+       double l1ObjectPt  = l1OneProngPi0Tau.objectPt;
+       double l1ObjectEta = l1OneProngPi0Tau.objectEta;
+       double l1ObjectPhi = l1OneProngPi0Tau.objectPhi;
+
+       TLorentzVector tempObject;
+       tempObject.SetPtEtaPhiE(l1ObjectPt, l1ObjectEta, l1ObjectPhi, l1ObjectPt);
+       TLorentzVector tempGen;
+       tempGen.SetPtEtaPhiE(GenOneProngPi0Tau.p4.Pt(),GenOneProngPi0Tau.p4.Eta(),GenOneProngPi0Tau.p4.Phi(),GenOneProngPi0Tau.p4.Pt());
+       if(tempObject.DeltaR(tempGen)<0.4){
+	 oneProngPi0Tau.objectPt  = tempObject.Pt();
+	 oneProngPi0Tau.objectEta = tempObject.Eta();
+	 oneProngPi0Tau.objectPhi = tempObject.Phi();
+
+	 oneProngPi0Tau.trackPt  =  l1OneProngPi0Tau.trackPt;
+	 oneProngPi0Tau.trackEta =  l1OneProngPi0Tau.trackEta;
+	 oneProngPi0Tau.trackPhi =  l1OneProngPi0Tau.trackPhi;
+
+	 oneProngPi0Tau.stripPt  = l1OneProngPi0Tau.stripPt;
+	 oneProngPi0Tau.stripEta = l1OneProngPi0Tau.stripEta;
+	 oneProngPi0Tau.stripPhi = l1OneProngPi0Tau.stripPhi;
+	 std::cout<<"Matched Object Pt: "<<tempObject.Pt()<<std::endl;
+	 std::cout<<"Matched strip Pt: "<<l1OneProngPi0Tau.stripPt<<std::endl;
+	 std::cout<<"Matched Track Pt: "<<l1OneProngPi0Tau.trackPt<<std::endl;
+	 oneProngPi0Tau.HCALEnergy = l1OneProngPi0Tau.HCALEnergy;
+	 oneProngPi0Tau.ECALEnergy = l1OneProngPi0Tau.ECALEnergy;
+	 
+	 oneProngPi0Tau.iso = l1OneProngPi0Tau.iso;
+
+	 oneProngPi0Tau.tauDecayMode = l1OneProngPi0Tau.tauDecayMode;
+	 break;
+       }
+     }
+     //std::cout<<"one prong tau, track pt: "<<oneProngTau.trackPt<<" eta: "<<oneProngTau.trackEta<<" phi: "<<oneProngTau.trackPhi;
+     oneProngPi0Tree->Fill();
+   }
+
+   /////////////////////////finished with Pi0 Taus
    //create one prong taus when gen one prong tau is nearby
    for(auto GenOneProngTau: GenOneProngTaus){
      gen1ProngPt = GenOneProngTau.p4.Pt();

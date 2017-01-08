@@ -110,6 +110,14 @@ L1TEventDisplayGenerator::L1TEventDisplayGenerator( const ParameterSet & cfg ) :
     efficiencyTree->Branch("recoPt",        &recoPt,   "recoPt/D");
     efficiencyTree->Branch("recoEta",       &recoEta,   "recoEta/D");
     efficiencyTree->Branch("recoPhi",       &recoPhi,   "recoPhi/D");
+
+    efficiencyTree->Branch("genPt",        &genPt,   "genPt/D");
+    efficiencyTree->Branch("genEta",       &genEta,  "genEta/D");
+    efficiencyTree->Branch("genPhi",       &genPhi,  "genPhi/D");
+
+    efficiencyTree->Branch("genPizeroPt",  &genPizeroPt,   "genPizeroPt/D");
+    efficiencyTree->Branch("genPizeroEta", &genPizeroEta,  "genPizeroEta/D");
+    efficiencyTree->Branch("genPizeroPhi", &genPizeroPhi,  "genPizeroPhi/D");
     
   }
 
@@ -131,98 +139,112 @@ void L1TEventDisplayGenerator::analyze( const Event& evt, const EventSetup& es )
   lumi = evt.id().luminosityBlock();
   event = evt.id().event();
    // L1 Tracks
-   edm::Handle<L1TkTrackCollectionType> l1trackHandle;
-   evt.getByLabel(L1TrackInputTag, l1trackHandle);
+  edm::Handle<L1TkTrackCollectionType> l1trackHandle;
+  evt.getByLabel(L1TrackInputTag, l1trackHandle);
 
-   // L1 Track based primary vertex
-   edm::Handle<L1TkPrimaryVertexCollection> l1PrimaryVertexHandle;
-   evt.getByLabel(L1TrackPrimaryVertexTag, l1PrimaryVertexHandle);
-
-   edm::Handle<l1extra::L1EmParticleCollection> l1EGCrystalHandle;
-   evt.getByToken(crystalSrc_, l1EGCrystalHandle);
-
-   // Get genParticles
-   edm::Handle<GenParticleCollectionType> genParticleHandle;
-   if(!evt.getByLabel(genSrc_,genParticleHandle))
-     std::cout<<"No gen Particles Found "<<std::endl;
-
-   vector<TTTrack<Ref_PixelDigi_> > l1TracksRef;
-   
-   edm::Handle<EcalTrigPrimDigiCollection> ecalTPGs;
-   edm::Handle<HcalTrigPrimDigiCollection> hcalTPGs;  
-   
-   //Clear the vectors
-   l1Tracks->clear(); 
-   l1EcalClusters->clear(); 
-   l1EcalCrystals->clear(); 
-   genHadronicTaus->clear(); 
-
-   vector<reco::GenParticle> genTaus;
-   vector<reco::GenParticle> genParticles;
-   reco::GenParticle* genTau;
-   for(unsigned int i = 0; i< genParticleHandle->size(); i++){
-     edm::Ptr<reco::GenParticle> ptr(genParticleHandle, i);
-     genParticles.push_back(*ptr);
-     if(abs(ptr->pdgId())==15){
-       genTaus.push_back(*ptr);
-       //const reco::GenParticle *genTau = &(*ptr);
+  // L1 Track based primary vertex
+  edm::Handle<L1TkPrimaryVertexCollection> l1PrimaryVertexHandle;
+  evt.getByLabel(L1TrackPrimaryVertexTag, l1PrimaryVertexHandle);
   
-     }
-   }
+  edm::Handle<l1extra::L1EmParticleCollection> l1EGCrystalHandle;
+  evt.getByToken(crystalSrc_, l1EGCrystalHandle);
+  
+  // Get genParticles
+  edm::Handle<GenParticleCollectionType> genParticleHandle;
+  if(!evt.getByLabel(genSrc_,genParticleHandle))
+    std::cout<<"No gen Particles Found "<<std::endl;
+  
+  vector<TTTrack<Ref_PixelDigi_> > l1TracksRef;
+  
+  edm::Handle<EcalTrigPrimDigiCollection> ecalTPGs;
+  edm::Handle<HcalTrigPrimDigiCollection> hcalTPGs;  
+  
+   //Clear the vectors
+  l1Tracks->clear(); 
+  l1EcalClusters->clear(); 
+  l1EcalCrystals->clear(); 
+  genHadronicTaus->clear(); 
+  
+  vector<reco::GenParticle> genTaus;
+  vector<reco::GenParticle> genParticles;
+  reco::GenParticle* genTau;
+  for(unsigned int i = 0; i< genParticleHandle->size(); i++){
+    edm::Ptr<reco::GenParticle> ptr(genParticleHandle, i);
+    genParticles.push_back(*ptr);
+    if(abs(ptr->pdgId())==15){
+      genTaus.push_back(*ptr);
+      //const reco::GenParticle *genTau = &(*ptr);
+      
+    }
+  }
+  
+  for(auto genTau: genTaus){
+    std::cout<<"got tau"<<std::endl;
+    TLorentzVector piZero;
+    std::cout<<"Tau Decay Mode "<<GetDecayMode(&genTau)<<std::endl;
+    decayMode = GetDecayModePiZero(&genTau,piZero);
+    //onlygetting the hadronic taus
+    //if(decayMode<10)
+    //continue;
+    
+    reco::Candidate::LorentzVector visGenTau= getVisMomentum(&genTau, &genParticles);
+    
+    TLorentzVector genTauTemp;
+    float et, eta, phi;
+    et     = visGenTau.pt();
+    genPt  = visGenTau.pt();
+    
+    eta    = visGenTau.eta();
+    genEta = visGenTau.eta();
+    
+    phi    = visGenTau.phi();
+    genPhi = visGenTau.phi();
+    
+    genTauTemp.SetPtEtaPhiE(et,eta,phi,et);
+    genHadronicTaus->push_back(genTauTemp);
+    
+    if(piZero.Pt()>0){
+      genPizeroPt  = piZero.Pt();
+      genPizeroEta = piZero.Eta();
+      genPizeroPhi = piZero.Phi();
+    }
+    else{
+      genPizeroPt  = 0;
+      genPizeroEta = 0;
+      genPizeroPhi = 0;
+    }
 
-   for(auto genTau: genTaus){
-     std::cout<<"got tau"<<std::endl;
-
-     std::cout<<"Tau Decay Mode "<<GetDecayMode(&genTau)<<std::endl;
-     decayMode = GetDecayMode(&genTau);
-     //onlygetting the hadronic taus
-     if(decayMode<10)
-       continue;
-
-     reco::Candidate::LorentzVector visGenTau= getVisMomentum(&genTau, &genParticles);
-
-     TLorentzVector genTauTemp;
-     float et, eta, phi;
-     et  = visGenTau.pt();
-     eta = visGenTau.eta();
-     phi = visGenTau.phi();
-     genTauTemp.SetPtEtaPhiE(et,eta,phi,et);
-     genHadronicTaus->push_back(genTauTemp);
-
-   }
-
-
-   
-   //Find and sort the tracks
-   for(size_t track_index=0; track_index<l1trackHandle->size(); ++track_index)
-     {
-       edm::Ptr<TTTrack<Ref_PixelDigi_>> ptr(l1trackHandle, track_index);
-       //std::cout<<"# "<<track_index<<": "<<pt<<std::endl;
-       TLorentzVector l1TrackTemp;
+    
+    //Find and sort the tracks
+    for(size_t track_index=0; track_index<l1trackHandle->size(); ++track_index)
+      {
+	edm::Ptr<TTTrack<Ref_PixelDigi_>> ptr(l1trackHandle, track_index);
+	//std::cout<<"# "<<track_index<<": "<<pt<<std::endl;
+	TLorentzVector l1TrackTemp;
        float et, eta, phi;
        et  = ptr->getMomentum().perp();
        eta = ptr->getMomentum().eta();
        phi = ptr->getMomentum().phi();
        l1TrackTemp.SetPtEtaPhiE(et,eta,phi,et);
        l1Tracks->push_back(l1TrackTemp);
-     }
-   //std::sort(l1Tracks->begin(),l1Tracks->end(),compareByPtLorentz);   
-
-   //Find and sort the tracks
-   for(size_t crystal_index=0; crystal_index< l1EGCrystalHandle->size(); ++crystal_index)
-     {
-       edm::Ptr<l1extra::L1EmParticle> ptr(l1EGCrystalHandle, crystal_index);
-       //std::cout<<"# "<<crystal_index<<": "<<pt<<std::endl;
-       TLorentzVector l1CrystalTemp;
-       float et, eta, phi;
-       et  = ptr->pt();
-       eta = ptr->eta();
-       phi = ptr->phi();
-       l1CrystalTemp.SetPtEtaPhiE(et,eta,phi,et);
-       l1EcalCrystals->push_back(l1CrystalTemp);
-       //std::cout<<"crystal pt:"<<et<<" eta: "<<eta<<" phi: "<<phi<<std::endl;
-     }
-   std::sort(l1EcalCrystals->begin(),l1EcalCrystals->end(),compareByPtLorentz);   
+      }
+    //std::sort(l1Tracks->begin(),l1Tracks->end(),compareByPtLorentz);   
+    
+    //Find and sort the tracks
+    for(size_t crystal_index=0; crystal_index< l1EGCrystalHandle->size(); ++crystal_index)
+      {
+	edm::Ptr<l1extra::L1EmParticle> ptr(l1EGCrystalHandle, crystal_index);
+	//std::cout<<"# "<<crystal_index<<": "<<pt<<std::endl;
+	TLorentzVector l1CrystalTemp;
+	float et, eta, phi;
+	et  = ptr->pt();
+	eta = ptr->eta();
+	phi = ptr->phi();
+	l1CrystalTemp.SetPtEtaPhiE(et,eta,phi,et);
+	l1EcalCrystals->push_back(l1CrystalTemp);
+	//std::cout<<"crystal pt:"<<et<<" eta: "<<eta<<" phi: "<<phi<<std::endl;
+      }
+    std::sort(l1EcalCrystals->begin(),l1EcalCrystals->end(),compareByPtLorentz);   
 
 
    // electron candidate extra info from Sacha's algorithm
@@ -308,8 +330,8 @@ void L1TEventDisplayGenerator::analyze( const Event& evt, const EventSetup& es )
     }
 
   efficiencyTree->Fill();
-   /**/
- }
+}
+}
 
 
 

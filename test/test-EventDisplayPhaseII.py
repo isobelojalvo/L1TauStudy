@@ -192,13 +192,13 @@ process.L1EGCrystalsHeatMap.saveAllClusters = cms.untracked.bool(True)
 process.panalyzer = cms.Path(process.tauAnalyzer)
 
 process.TFileService = cms.Service("TFileService", 
-   fileName = cms.string("eventDisplay-PhaseII.root"), 
+   fileName = cms.string("eventDisplay-PhaseII-1prong.root"), 
    closeFileFast = cms.untracked.bool(True)
 )
 
 
 process.out = cms.OutputModule("PoolOutputModule",
-    fileName = cms.untracked.string("fullDump-eventDisplay.root"),
+    fileName = cms.untracked.string("fullDump-eventDisplay-1prong.root"),
     outputCommands = cms.untracked.vstring('keep *') #'keep *_*_*_L1TCaloSummaryTest')
     #outputCommands = cms.untracked.vstring('drop *', 'keep *_l1tCaloLayer1Digis_*_*, keep *_*_*_L1TCaloSummaryTest' )
 )

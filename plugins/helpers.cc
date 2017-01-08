@@ -44,6 +44,36 @@ bool isNeutrino(const reco::Candidate* daughter)
 }
 
 
+int GetDecayModePiZero(const reco::GenParticle* tau, TLorentzVector &pizero){
+  int decayMode = -1;
+  pizero.SetPtEtaPhiE(0,0,0,0);
+  std::vector<int> counts(4,0);
+  //std::cout << " ->";
+  for(size_t j = 0; j < tau->numberOfDaughters(); ++j){  //looping through first level of decay products 
+    int pdg = tau->daughter(j)->pdgId();
+    if (TMath::Abs(pdg)==11) ++counts[0];
+    if (TMath::Abs(pdg)==13) ++counts[1];
+    if (TMath::Abs(pdg)==111) ++counts[2];
+    if (TMath::Abs(pdg)==211 || TMath::Abs(pdg)==321) ++counts[3];
+    if (TMath::Abs(pdg)==111){
+      pizero.SetPtEtaPhiE(tau->daughter(j)->pt(),tau->daughter(j)->eta(),tau->daughter(j)->phi(),tau->daughter(j)->pt());
+      std::cout<<"pizero pt: "<<tau->daughter(j)->pt()<<std::endl;
+    }
+    // if (tau->daughter(j)->status() == 1){  //status=1 means no further decay for this daughter
+    // std::cout << " " << pdg;
+    //} 
+    if (tau->daughter(j)->status() == 2){  //status=2 means this daughter decays 
+      //std::cout << " (" << pdg;
+      GetDaughterDecayMode(tau->daughter(j), counts); //we check the daughter for decay products
+      //std::cout << " )";
+    }
+  }
+  if (counts[0] > 0) decayMode = 3;
+  if (counts[1] > 0) decayMode = 4;
+  if (counts[3] > 0) decayMode = 10*counts[3]+counts[2];
+  return decayMode;
+}
+
 int GetDecayMode(const reco::GenParticle* tau){
   int decayMode = -1;
   std::vector<int> counts(4,0);

@@ -7,15 +7,16 @@ process.load("FWCore.MessageService.MessageLogger_cfi")
 process.load('Configuration.EventContent.EventContent_cff')
 process.MessageLogger.categories = cms.untracked.vstring('L1EGRateStudies', 'FwkReport')
 process.MessageLogger.cerr.FwkReport = cms.untracked.PSet(
-   reportEvery = cms.untracked.int32(1)
+   reportEvery = cms.untracked.int32(10)
 )
 
 process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(1000) )
 
 process.source = cms.Source("PoolSource",
    fileNames = cms.untracked.vstring(
+        'file:event8021-pi0.root'
         #'file:badEvent.root'
-        'file:/hdfs/store/mc/TTI2023Upg14D/TauThreeProngsEnriched/GEN-SIM-DIGI-RAW/PU140bx25_PH2_1K_FB_V3-v2/00000/062C6F7F-7FE3-E311-96B9-0025905A48C0.root'
+        #'file:/hdfs/store/mc/TTI2023Upg14D/TauThreeProngsEnriched/GEN-SIM-DIGI-RAW/PU140bx25_PH2_1K_FB_V3-v2/00000/062C6F7F-7FE3-E311-96B9-0025905A48C0.root'
         #'file:/hdfs/store/mc/TTI2023Upg14D/SingleTauOneProngFlatPt10To100/GEN-SIM-DIGI-RAW/PU140bx25_PH2_1K_FB_V3-v2/00000/06ABA3EB-FCE6-E311-85A2-0026189438BD.root'
         )
 )
